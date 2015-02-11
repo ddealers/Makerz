@@ -1,0 +1,15 @@
+# Site settings
+title: Makerz
+email: be@digitaldealers.mx
+description: Nuestro propósito es generar cambios sostenibles que impacten positivamente en la sociedad aplicando creatividad para buscar oportunidades y resolver problemas. Es por ello que nuestro motor gira con curiosidad, optimismo, sentido del humor, empeño y la oportunidad de siempre preguntar, enseñar o aprender de los demás, de nuestros experimentos y de nuestros errores también, todo esto para mejorar día con día y tratar de hacer de este un mundo mejor.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://makerz.mx" # the base hostname & protocol for your site
+twitter_username: bedealers
+github_username:  ddealers
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+#Collections

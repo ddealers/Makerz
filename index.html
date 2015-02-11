@@ -1,22 +1,21 @@
-<DOCTYPE! html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device=width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-		<script src="js/TweenLite.min.js"></script>
-		<script src="js/EasePack.min.js"></script>
-		<script src="js/rAF.js"></script>
-		<script type="text/javascript" src="js/javascript.js"></script>
-	</head>
-	<body>
-		<div class="container background">
-			<div id="large-header" class="large-header">
-				<canvas id="background-canvas"></canvas>
-				<h1 class="main-title"> Makerz<br><span class="thin">Digital Dealers</span></h1>			
-			</div>
-		</div>
-	</body>
-</html>
+---
+layout: default
+---
+<section id="courses">
+	<ul>
+	{% for post in site.posts %}
+		<li>
+			<a href="{{ post.url | prepend: post.baseurl }}">
+				<h3>{{ post.title }}</h3>
+				{{ post.excerpt }}
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+</section>
+<section id="about">
+	<p>No somos una academia pero tampoco un colectivo. Somos un grupo de amigos que disfrutan de trabajar en la profesión que escogieron, buscaron o incluso descubrieron.</p>
+	<p>Nuestro propósito es generar cambios sostenibles que impacten positivamente en la sociedad aplicando creatividad para buscar oportunidades y resolver problemas. Es por ello que nuestro motor gira con curiosidad, optimismo, sentido del humor, empeño y la oportunidad de siempre preguntar, enseñar o aprender de los demás, de nuestros experimentos y de nuestros errores también, todo esto para mejorar día con día y tratar de hacer de este un mundo mejor.</p>
+ 	<p>¿Quiénes conforman Makerz? Artistas, Arquitectos, Diseñadores, Comunicólogos, Fashionistas, Gastrónomos, Músicos, Emprendedores, Inventores, Viajeros, Escritores y todo aquel que ame lo que hace.</p>
+</section>
+<section id="contact"></section>
