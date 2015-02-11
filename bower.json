@@ -1,0 +1,14 @@
+{
+	"name": "Makerz",
+	"dependencies": {
+		"requestAnimationFrame": "0.0.22",
+		"jquery": "~2.1.3",
+		"gsap": "~1.15.0",
+		"ionicons": "~2.0.1"
+	},
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components"
+	]
+}
