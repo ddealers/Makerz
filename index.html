@@ -6,8 +6,9 @@ layout: default
 	{% for post in site.posts %}
 		<li>
 			<a href="{{ post.url | prepend: post.baseurl }}">
-				<h3>{{ post.title }}</h3>
+				<h3>{{ post.title }}<span>{{post.subtitle}}</span></h3>
 				{{ post.excerpt }}
+				<img src="{{post.img | prepend: post.baseurl }}">
 			</a>
 		</li>
 	{% endfor %}
