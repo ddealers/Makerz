@@ -1,0 +1,71 @@
+<DOCTYPE! html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device=width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+	</head>
+	<body>
+		<div class="container background">
+			<div id="large-header" class="large-header">
+				<canvas id="background-canvas"></canvas>
+				<h1 class="main-title"> Makerz<br><span class="thin">Digital Dealers</span></h1>			
+			</div>
+			<div class="container">
+			<!-- the header that will be animated by adding the respective state class to it -->
+			<header id="ha-header" class="ha-header ha-header-large">
+				<div class="ha-header-perspective">
+					<div class="ha-header-front">
+						<h1><span>MAKERZ</span></h1>
+						<nav>
+							<a href="http://tympanus.net/Development/AnimatedBooks/">&lsaquo; Previous Demo</a>
+							<a>Something</a>
+							<a>Anything</a>
+							<a href="http://tympanus.net/codrops/?p=15935">Back to the article</a>
+						</nav>
+					</div>
+					<div class="ha-header-bottom">
+						<nav>
+							<a>CURSOS</a>
+							<a>NOSOTROS</a>
+							<a>CONTACTO</a>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<section class="ha-waypoint" data-animate-down="ha-header-rotateBack" data-animate-up="ha-header-shrink">
+				
+			</section>
+			<section class="ha-waypoint" data-animate-down="ha-header-rotate" data-animate-up="ha-header-rotateBack">
+				
+			</section>
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script>
+			var $head = $( '#ha-header' );
+			$( '.ha-waypoint' ).each( function(i) {
+				var $el = $( this ),
+					animClassDown = $el.data( 'animateDown' ),
+					animClassUp = $el.data( 'animateUp' );
+
+				$el.waypoint( function( direction ) {
+					if( direction === 'down' && animClassDown ) {
+						$head.attr('class', 'ha-header ' + animClassDown);
+					}
+					else if( direction === 'up' && animClassUp ){
+						$head.attr('class', 'ha-header ' + animClassUp);
+					}
+				}, { offset: '100%' } );
+			} );
+		</script>
+	</body>
+</html>
