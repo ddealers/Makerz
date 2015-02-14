@@ -15,7 +15,7 @@ body {
 	}
 	#background-canvas{
 		height: 100% !important;
-		background: url(../imgs/fondo.png)no-repeat;
+		background: url(../imgs/fondo-.png)no-repeat;
 		background-size: cover;
 	}
 	.large-header {
@@ -50,12 +50,11 @@ body {
 	}
 	.main-title .thin {
 		font-weight: 200;
-		color: #333;
+		color: #fff;
 		font-size: 0.6em;
 	}
 	section {
 	width: 100%;
-	max-width: 46em;
 	text-align: justify;
 	padding: 0;
 	margin: 0;
@@ -67,30 +66,111 @@ body {
 		position: relative;
 		height: 300px;
 		background: #212121;
+		box-shadow: 0px 13px 104px #000;
 	}
 	ul li a h3{
 		position: absolute;
 		left: 200px;
 		top: 50px;
+		width: 400px;
+		margin-top: -25px;
+		padding-top: 10px;
 	}
+	h3.artisan{
+		color: #f2a007;
+		border-top: 6px solid #f2a007;
+	}
+	h3.design{
+		color: #0963be;
+		border-top: 6px solid #0963be;
+	}
+	h3.free{
+		color: #860645;
+		border-top: 6px solid #860645;
+	}
+	h3.kids{
+		color: #b7c705;
+		border-top: 6px solid #b7c705;
+	}
+	h3.digital{
+		color: #02958b;
+		border-top: 6px solid #02958b;
+	}
+
+		span.white{
+			color: #fff;
+		}
 	ul li a p{
-		color: #ddd;
 		font-size: 16px;
 		width: 400px;
 		position: absolute;
 		left: 200px;
 		top: 100px;
+		color: #fff !important;
+		opacity: 0.5 !important;
 	}
+		p.digital{
+			color: #02958b;
+			opacity: 1;
+		}
+		p.artisan{
+			color: #f2a007;
+			opacity: 1;
+		}
+		p.free{
+			color: #860645;
+			opacity: 1;
+		}
+		p.design{
+			color: #0963be;
+			opacity: 1;
+		}
+		p.kids{
+			color: #b7c705;
+			opacity: 1;
+		}
 	ul li a img{
 		width: 125px;
 		margin-left: 50px;
 		margin-top: 20px;
 		-webkit-filter: drop-shadow(11px 11px 20px black);
 	}
-section p {
-	opacity: 0.4;
-}
-
+	img.img{
+		width: 450px;
+		position: absolute;
+		right: 25px;
+	}
+	section#about{
+		background: #E75244;
+		margin-bottom: 150px;
+		position: relative;
+		z-index: 1;
+		box-shadow: 0px 13px 104px #000;
+		/*background: #E75244 url(../imgs/barra.png) fixed no-repeat;*/
+	}
+	section#about img{
+		position: absolute;
+		top: 0px;
+		width: 47.3%;
+		right: 0px;
+		bottom: 0;
+		margin: auto;
+	}
+	section#about p{
+		background: #E75244;
+	}	
+	section p {
+		opacity: 0.6;
+		padding: 20px 80px;
+		font-size: 16px;
+		line-height: 28px;
+		width: 500px;
+		color: #000;
+	}
+	section#courses{
+		padding-bottom: 150px;
+		background: url(../imgs/fondo-.png) no-repeat fixed;
+	}
 .scroll {
 	position: fixed;
 	top: 50%;
@@ -269,8 +349,8 @@ section p {
 }
 
 .ha-header nav a:hover {
-	color: #404F59;
-	border: #404F59 1px solid;
+	color: #b46201;
+	border: #b46201 1px solid;
 }
 
 .ha-header nav a:last-child {

@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "digital"
-rama: digital
-date:   2015-02-12 02:30:16
+title:  "free"
+rama: free
+date:   2015-02-16 02:30:16
 categories: jekyll update
-img: imgs/verde2.png
+img: imgs/music.png
 subtitle: " makerz"
-division: "digital"
+division: "free"
 description: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar"
-photo: imgs/digital.png
+photo: imgs/artisan.png
 ---
