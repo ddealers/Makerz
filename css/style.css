@@ -150,7 +150,7 @@ body {
 	section#about img{
 		position: absolute;
 		top: 0px;
-		width: 47.3%;
+		width: 43%;
 		right: 0px;
 		bottom: 0;
 		margin: auto;
@@ -169,7 +169,7 @@ body {
 	}
 	section p {
 		opacity: 0.6;
-		padding: 20px 80px;
+		padding: 20px 150px;
 		font-size: 16px;
 		line-height: 28px;
 		width: 500px;
@@ -181,29 +181,127 @@ body {
 		background: url(../imgs/back.png) no-repeat fixed;
 	}
 	div#nosotros{
-		background: #4C565E;
+		background: #212121;
 		color: #fff;
 		padding: 50px;
 		position: relative;
-		height: 400px;
+		height: 600px;
 		box-shadow: 0px 13px 104px #000;
+		opacity: 1;
 	}
 	div#nosotros p{
 		text-align: center;
 		font-size: 25px;
-		opacity: 0.3;
+		opacity: 0.8;
 		border: 1px solid;
 		padding: 10px;
 		width: 200px;
 		margin: auto;
+		color: #E75244;
+	}
+	div#nosotros p.frase{
+		width: 40%;
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		border: none;
+		opacity: .8;
+		font-size: 19px;
+		line-height: 32px;
+		color: #E75244;
+	}
+	p.frase span{
+		color: #fff;
+		margin-left: 50px;
+		font-weight: 600;
+		font-style: italic;
 	}
 	div#nosotros ol{
 		list-style: none;
 		display: -webkit-inline-box;
 		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 1200px;
+	}
+	div.info {
+		background: rgba(231, 82, 68, 0.9);
+		width: 250px;
+		border-radius: 20px;
+		position: absolute;
+		left: 125px;
+		height: 400px;
+		top: 150px;
+		display: none;
+	}
+	div.info.lau{
+		left: 412px;
+	}
+	div#text-lau p.tipo{
+		font-weight: bold;
+		font-size: 16px;
+		color: #fff;
+		border: none;
+		margin-top: 15px;
+	}
+	div#text-lau p.datos{
+		font-size: 16px;
+		color: #fff;
+		border: none;
+		line-height: 25px;
+	}
+	div.info.ares{
+		left: 700px; 
+	}
+	div#text-ares p.tipo{
+		font-weight: bold;
+		font-size: 16px;
+		color: #fff;
+		border: none;
+		margin-top: 15px;
+	}
+	div#text-ares p.datos{
+		font-size: 16px;
+		color: #fff;
+		border: none;
+		line-height: 25px;
+	}
+	div.info.juan{
+		left: 990px; 
+	}
+	div#text-juan p.tipo{
+		font-weight: bold;
+		font-size: 16px;
+		color: #fff;
+		border: none;
+		margin-top: 15px;
+	}
+	div#text-juan p.datos{
+		font-size: 16px;
+		color: #fff;
+		border: none;
+		line-height: 25px;
+	}
+	div#text-wences p.tipo{
+		font-weight: bold;
+		font-size: 16px;
+		color: #fff;
+		border: none;
+		margin-top: 15px;
+	}
+	div#text-wences p.datos{
+		font-size: 16px;
+		color: #fff;
+		border: none;
+		line-height: 25px;
 	}
 	div#nosotros ol li{
-		padding: 30px;
+		margin: 75px 70px;
+	}
+	div#nosotros ol li img{
+		height: 300px;
 	}
 	.back-fixed{
 		padding: 100px;
@@ -649,7 +747,7 @@ footer .contact{
 .hi-icon-wrap {
 	text-align: center;
 	margin: 0 auto;
-	padding: 2em 0 3em;
+	padding: 1em 0 0em;
 }
 
 .hi-icon {
@@ -696,7 +794,30 @@ footer .contact{
 	-webkit-transition: background 0.2s, color 0.2s;
 	-moz-transition: background 0.2s, color 0.2s;
 	transition: background 0.2s, color 0.2s;
-	background: #363636 url(../imgs/facebook.png)no-repeat 10px;
+
+}
+.hi-icon.hi-icon-mobile{
+	background: #363636 url(../imgs/facebook.png)no-repeat 12px;
+}
+.hi-icon.hi-icon-screen{
+	background: #363636 url(../imgs/twitter.png)no-repeat 18px;
+}
+.hi-icon.hi-icon-earth{
+	background: #363636 url(../imgs/google+.png)no-repeat 18px;
+}
+.hi-icon.hi-icon-support{
+	background: #363636 url(../imgs/github.png)no-repeat 16px 13px;
+}
+
+
+.hi-icon-screen:hover {
+	background: url(../imgs/twitter-1.png)no-repeat 18px;
+}
+.hi-icon-earth:hover {
+	background: url(../imgs/google+-1.png)no-repeat 18px;
+}
+.hi-icon-support:hover {
+	background: url(../imgs/github-1.png)no-repeat 16px 13px;
 }
 
 .hi-icon-effect-1 .hi-icon:after {
@@ -714,10 +835,10 @@ footer .contact{
 	opacity: 0;
 }
 /* Effect 1a */
-.hi-icon-effect-1a .hi-icon:hover {
+.hi-icon-effect-1a .hi-icon-mobile:hover {
 	background: rgba(255,255,255,1);
 	color: #41ab6b;
-	background: url(../imgs/facebook-1.png)no-repeat 10px;
+	background: url(../imgs/facebook-1.png)no-repeat 12px;
 }
 
 
@@ -734,7 +855,46 @@ div.post{
 	color: #00736b;
 	padding: 0px 50px;
 }
-
+div form p{
+	color: #fff;
+	opacity: .4;
+	font-size: 20px;
+	padding: 40px 10px 10px;
+}
+div form input.form-control{
+	padding: 10px;
+	width: 350px;
+	height: 40px;
+	border-radius: 10px;
+	background: none;
+	font-size: 20px;
+	color: #fff;
+	outline: 0;
+}
+div form textarea{
+	padding: 10px;
+	width: 350px;
+	height: 140px;
+	border-radius: 10px;
+	background: none;
+	font-size: 20px;
+	color: #fff;
+	outline: 0;
+}
+div button.btn.btn-ttc{
+	background: #363636;
+	border-radius: 10px;
+	height: 50px;
+	width: 100px;
+	font-size: 20px;
+	margin: 20px;
+	border: none;
+	color: #fff;
+	outline: 0;
+}
+div button.btn.btn-ttc:hover{
+	color: #b46201;
+}
 @media screen and (max-width: 65em) {
 	body {
 		font-size: 85%;

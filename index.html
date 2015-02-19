@@ -26,11 +26,34 @@ layout: default
 <div id="nosotros">
 	<p class="about">NOSOTROS</p>
 	<ol>
-		<li><img src="./imgs/cara.png"></li>
-		<li><img src="./imgs/cara.png"></li>
-		<li><img src="./imgs/cara.png"></li>
-		<li><img src="./imgs/cara.png"></li>
+		<li class="w"><img src="./imgs/wences.png"></li>
+		<li class="l"><img src="./imgs/lau.png"></li>
+		<li class="a"><img src="./imgs/ares.png"></li>
+		<li class="j"><img src="./imgs/juan.png"></li>
 	</ol>
+
+	<div id="text-wences" class="info wences">
+		<p class="tipo">WENCESLAO <br>NEGRETE<br>DESARROLLADOR WEB</p>
+		<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+	</div>
+
+	<div id="text-lau" class="info lau">
+		<p class="tipo">LAURA <br>AGUILAR<br>DESARROLLADOR WEB</p>
+		<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+	</div>
+
+	<div id="text-ares" class="info ares">
+		<p class="tipo">ARES <br>VÁZQUEZ<br>DESARROLLADOR WEB</p>
+		<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+	</div>
+
+	<div id="text-juan" class="info juan">
+		<p class="tipo">JUAN <br>MENDEZ<br>DESARROLLADOR WEB</p>
+		<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+	</div>
+
+	<p   class="frase">El auténtico creador desdeña la técnica entendida como un fin y no como un medio.<span>Charles Chaplin</span>
+	</p>
 </div>
 <div class="back-fixed"></div>
 <footer>
@@ -43,12 +66,53 @@ layout: default
 			<a href="#set-1" class="hi-icon hi-icon-support">github</a>
 		</div>
 	</section>
+	<div id="text-lau">
+
+	</div>
+	<div id="text-ares">
+
+	</div>
+	<div id="text-juan">
+
+	</div>
 	<div>
 		<form id="form" method="post">
-			<p>Introduce tu nombre</p>
-			<input type="text" name="nombre">
-			<input type="mail" name="e-mail">
-			<input id="btn-send" type="button" value="Enviar">
+			<form id="container-form" class="form-horizontal" role="form" action="" method="post" target="respuesta" enctype="multipart/form-data">
+			<div class="form-group">
+				<div class="col-sm-3 control-label">
+          			<p>
+          				<small>Nombre</small>
+          			</p>
+          		</div>
+          		<div class="col-sm-9">
+          			<input type="text" class="form-control" id="name" name="name">
+          		</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-3 control-label">
+          			<p>
+          				<small>Correo electrónico</small>
+          			</p>
+          		</div>
+          		<div class="col-sm-9">
+          			<input type="email" class="form-control" id="email" name="email">
+          		</div>
+			</div>
+			<div class="form-group">
+                <div class="col-sm-4 control-label">
+                     <p>
+                          <small>Mensaje</small>
+                     </p>
+                </div>
+                <div class="col-sm-8">
+                     <textarea class="form-control" rows="6" id="message" name="message"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+				<div class="col-sm-offset-3 col-sm-9">
+          			<button type="submit" class="btn btn-ttc">Send</button>
+          		</div>
+			</div>
 		</form>
 	</div>
 </footer>

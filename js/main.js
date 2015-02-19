@@ -207,6 +207,60 @@ $(document).on('ready',
 	    		TweenMax.fromTo ('section#about img',.5,{opacity:0}, {opacity:1});
 	    		$(this).attr("src", "../imgs/part-1.png");
 	    	});
+	 	$('.w').on('mouseover',
+	 		function (){
+	 			$('#text-wences').css({display:"block"});
+	 			TweenMax.fromTo ('#text-wences',0.7,{y: -50, opacity:0},{y: 0, opacity:.9, ease: Bounce.easeOut});
+	 		});
+	 	$('#text-wences').on('mouseleave',
+	 		function (){
+	 			TweenMax.fromTo ('#text-wences',0.7,{y: 0, opacity:.9},{y: -50, opacity:0, ease: Bounce.easeOut, onComplete: function(){
+	 				$('#text-wences').css({display:"none"});
+	 			}});
+	 		});
+
+
+
+	 	$('.l').on('mouseover',
+	 		function (){
+	 			$('#text-lau').css({display:"block"});
+	 			TweenMax.fromTo ('#text-lau',0.7,{y: -50, opacity:0},{y: 0, opacity:.9, ease: Bounce.easeOut});
+	 		});
+	 	$('#text-lau').on('mouseleave',
+	 		function (){
+	 			TweenMax.fromTo ('#text-lau',0.7,{y: 0, opacity:.9},{y: -50, opacity:0, ease: Bounce.easeOut, onComplete: function(){
+	 				$('#text-lau').css({display:"none"});
+	 			}});
+	 		});
+
+
+
+	 	$('.a').on('mouseover',
+	 		function(){
+	 			$('#text-ares').css({display:"block"});
+	 			TweenMax.fromTo ('#text-ares',0.7,{y: -50, opacity:0},{y: 0, opacity:.9, ease: Bounce.easeOut});
+	 		});
+	 	$('#text-ares').on('mouseleave',
+	 		function (){
+	 			TweenMax.fromTo ('#text-ares',0.7,{y: 0, opacity:.9},{y: -50, opacity:0, ease: Bounce.easeOut, onComplete: function(){
+	 				$('#text-ares').css({display:"none"});
+	 			}});
+	 		});
+
+	 	$('.j').on('mouseover',
+	 		function(){
+	 			$('#text-juan').css({display:"block"});
+	 			TweenMax.fromTo ('#text-juan',0.7,{y: -50, opacity:0},{y: 0, opacity:.9, ease: Bounce.easeOut});
+	 		});
+	 	$('#text-juan').on('mouseleave',
+	 		function (){
+	 			TweenMax.fromTo ('#text-juan',0.7,{y: 0, opacity:.9},{y: -50, opacity:0, ease: Bounce.easeOut, onComplete: function(){
+	 				$('#text-juan').css({display:"none"});
+	 			}});
+	 		});
+
+			
+	    
 		/*
 		var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
 // Main
