@@ -745,10 +745,10 @@ footer .contact{
 
 	}
 	#map {
-      width: 600px;
+      	width: 600px;
 		height: 400px;
 		position: absolute !important;
-		bottom: 130px;
+		top: 170px;
 		right: 200px;
     }
 .hi-icon-wrap {
@@ -907,7 +907,7 @@ div button.btn.btn-ttc:hover{
 		p.direccion{
 			position: absolute;
 			right: 465px;
-			bottom: 80px;
+			bottom: 235px;
 			font-size: 16px;
 		}
 @media screen and (max-width: 65em) {
