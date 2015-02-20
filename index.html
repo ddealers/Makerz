@@ -2,14 +2,12 @@
 layout: default
 ---
 <section id="courses">
-	<ul>
+	<ul class="courses">
 	{% for post in site.posts %}
-		<li>
+		<li class="{{post.division}}">
 			<a href="{{ post.url | prepend: post.baseurl }}">
-				<h3 class="{{post.rama}}">{{ post.title }}<span class="white">{{post.subtitle}}</span></h3>
-				{{ post.excerpt }}
-				<img src="{{post.img | prepend: post.baseurl }}">
-				<p class="{{post.division}}">{{post.description}}</p>
+				<h3 class="{{post.division}}">{{ post.title }} <span class="white">{{post.subtitle}}</span></h3>
+				<div class="{{post.division}}">{{ post.excerpt }}</div>
 				<img class="img" src="{{post.photo | prepend: post.baseurl }}">
 			</a>
 		</li>
@@ -23,7 +21,7 @@ layout: default
 	<p>Nuestro propósito es generar cambios sostenibles que impacten positivamente en la sociedad aplicando creatividad para buscar oportunidades y resolver problemas. Es por ello que nuestro motor gira con curiosidad, optimismo, sentido del humor, empeño y la oportunidad de siempre preguntar, enseñar o aprender de los demás, de nuestros experimentos y de nuestros errores también, todo esto para mejorar día con día y tratar de hacer de este un mundo mejor.</p>
  	<p>¿Quiénes conforman Makerz? Artistas, Arquitectos, Diseñadores, Comunicólogos, Fashionistas, Gastrónomos, Músicos, Emprendedores, Inventores, Viajeros, Escritores y todo aquel que ame lo que hace.</p>
 </section>
-<div id="nosotros">
+<section id="nosotros">
 	<p class="about">NOSOTROS</p>
 	<ol>
 		<li class="w"><img src="./imgs/wences.png"></li>
@@ -51,10 +49,9 @@ layout: default
 		<p class="tipo">JUAN <br>MENDEZ<br>DESARROLLADOR WEB</p>
 		<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
 	</div>
-
-	<p   class="frase">El auténtico creador desdeña la técnica entendida como un fin y no como un medio.<span>Charles Chaplin</span>
+	<p class="frase">El auténtico creador desdeña la técnica entendida como un fin y no como un medio.<span>Charles Chaplin</span>
 	</p>
-</div>
+</section>
 <div class="back-fixed"></div>
 <footer>
 	<p class="contact">CONTÁCTANOS</p>
