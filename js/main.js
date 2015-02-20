@@ -258,7 +258,19 @@ $(document).on('ready',
 	 				$('#text-juan').css({display:"none"});
 	 			}});
 	 		});
-
+	 	var map = new GMaps({
+	      	el: '#map',
+	      	lat: 19.516458,
+	      	lng: -99.040744
+	    });
+	    map.addMarker({
+		  	lat: 19.516458,
+		  	lng: -99.040744,
+		  	title: 'Makerz',
+		  	click: function(e) {
+		    alert('You clicked in this marker');
+		  	}
+		});
 			
 	    
 		/*
