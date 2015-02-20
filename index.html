@@ -2,16 +2,15 @@
 layout: default
 ---
 <section id="courses">
-	<ul>
+	<ul class="courses">
 	{% for post in site.posts %}
-		<li>
-			<a href="{{ post.url | prepend: post.baseurl }}">
-				<h3 class="{{post.rama}}">{{ post.title }}<span class="white">{{post.subtitle}}</span></h3>
+		<li class="{{post.division}}">
+			<h3 class="{{post.division}}">{{ post.title }} <span class="white">{{post.subtitle}}</span></h3>
+			<div>
 				{{ post.excerpt }}
-				<img src="{{post.img | prepend: post.baseurl }}">
-				<p class="{{post.division}}">{{post.description}}</p>
-				<img class="img" src="{{post.photo | prepend: post.baseurl }}">
-			</a>
+				<a class="{{post.division}}" href="{{ post.url | prepend: post.baseurl }}">Ver detalle</a>
+			</div>
+			<img class="img" src="{{post.photo | prepend: post.baseurl }}">
 		</li>
 	{% endfor %}
 	</ul>
@@ -23,41 +22,44 @@ layout: default
 	<p>Nuestro propósito es generar cambios sostenibles que impacten positivamente en la sociedad aplicando creatividad para buscar oportunidades y resolver problemas. Es por ello que nuestro motor gira con curiosidad, optimismo, sentido del humor, empeño y la oportunidad de siempre preguntar, enseñar o aprender de los demás, de nuestros experimentos y de nuestros errores también, todo esto para mejorar día con día y tratar de hacer de este un mundo mejor.</p>
  	<p>¿Quiénes conforman Makerz? Artistas, Arquitectos, Diseñadores, Comunicólogos, Fashionistas, Gastrónomos, Músicos, Emprendedores, Inventores, Viajeros, Escritores y todo aquel que ame lo que hace.</p>
 </section>
-<div id="nosotros">
+<section id="nosotros">
 	<p class="about">NOSOTROS</p>
-	<ol>
-		<li class="w"><img src="./imgs/wences.png"></li>
-		<li class="l"><img src="./imgs/lau.png"></li>
-		<li class="a"><img src="./imgs/ares.png"></li>
-		<li class="j"><img src="./imgs/juan.png"></li>
-	</ol>
-
-	<div id="text-wences" class="info wences">
-		<p class="tipo">WENCESLAO <br>NEGRETE<br>DESARROLLADOR WEB</p>
-		<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
-	</div>
-
-	<div id="text-lau" class="info lau">
-		<p class="tipo">LAURA <br>AGUILAR<br>DESARROLLADOR WEB</p>
-		<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
-	</div>
-
-	<div id="text-ares" class="info ares">
-		<p class="tipo">ARES <br>VÁZQUEZ<br>DESARROLLADOR WEB</p>
-		<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
-	</div>
-
-	<div id="text-juan" class="info juan">
-		<p class="tipo">JUAN <br>MENDEZ<br>DESARROLLADOR WEB</p>
-		<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
-	</div>
-
-	<p   class="frase">El auténtico creador desdeña la técnica entendida como un fin y no como un medio.<span>Charles Chaplin</span>
+	<ul>
+		<li class="w">
+			<img src="./imgs/wences.png">
+			<div id="text-wences" class="info wences">
+				<p class="tipo">WENCESLAO <br>NEGRETE<br>DESARROLLADOR WEB</p>
+				<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+			</div>
+		</li>
+		<li class="l">
+			<img src="./imgs/lau.png">
+			<div id="text-lau" class="info lau">
+				<p class="tipo">LAURA <br>AGUILAR<br>DESARROLLADOR WEB</p>
+				<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+			</div>
+		</li>
+		<li class="a">
+			<img src="./imgs/ares.png">
+			<div id="text-ares" class="info ares">
+				<p class="tipo">ARES <br>VÁZQUEZ<br>DESARROLLADOR WEB</p>
+				<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+			</div>
+		</li>
+		<li class="j">
+			<img src="./imgs/juan.png">
+			<div id="text-juan" class="info juan">
+				<p class="tipo">JUAN <br>MENDEZ<br>DESARROLLADOR WEB</p>
+				<p class="datos">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+			</div>
+		</li>
+	</ul>
+	<p class="frase">El auténtico creador desdeña la técnica entendida como un fin y no como un medio.<span>Charles Chaplin</span>
 	</p>
-</div>
-<div class="back-fixed"></div>
+</section>
 <footer>
 	<p class="contact">CONTÁCTANOS</p>
+<<<<<<< HEAD
 	<div id="text-lau">
 
 	</div>
@@ -66,40 +68,44 @@ layout: default
 	</div>
 	<div id="text-juan">
 
+=======
+	<div id="set-1">
+		<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+			<a href="https://www.facebook.com/digitaldealers" class="hi-icon hi-icon-mobile">facebook</a>
+			<a href="https://twitter.com/bedealers" class="hi-icon hi-icon-screen">twitter</a>
+			<!--a href="" class="hi-icon hi-icon-earth">google+</a-->
+			<a href="https://github.com/ddealers" class="hi-icon hi-icon-support">github</a>
+		</div>
+>>>>>>> bb8602ed274c51bed463573b3c66056008dbba17
 	</div>
-	<div>
-		<form id="form" method="post">
-			<form id="container-form" class="form-horizontal" role="form" action="" method="post" target="respuesta" enctype="multipart/form-data">
-			<div class="form-group">
-				<div class="col-sm-3 control-label">
-          			<p>
-          				<small>Nombre</small>
-          			</p>
-          		</div>
-          		<div class="col-sm-9">
-          			<input type="text" class="form-control" id="name" name="name">
-          		</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-3 control-label">
-          			<p>
-          				<small>Correo electrónico</small>
-          			</p>
-          		</div>
-          		<div class="col-sm-9">
-          			<input type="email" class="form-control" id="email" name="email">
-          		</div>
-			</div>
-			<div class="form-group">
-                <div class="col-sm-4 control-label">
-                     <p>
-                          <small>Mensaje</small>
-                     </p>
-                </div>
-                <div class="col-sm-8">
-                     <textarea class="form-control" rows="6" id="message" name="message"></textarea>
-                </div>
+	<form class="form-horizontal" role="form" action="" method="post">
+		<div class="form-group">
+			<div class="col-sm-3 control-label">
+      			<p>
+      				<small>Nombre</small>
+      			</p>
+      		</div>
+      		<div class="col-sm-9">
+      			<input type="text" class="form-control" id="name" name="name">
+      		</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-3 control-label">
+      			<p>
+      				<small>Correo electrónico</small>
+      			</p>
+      		</div>
+      		<div class="col-sm-9">
+      			<input type="email" class="form-control" id="email" name="email">
+      		</div>
+		</div>
+		<div class="form-group">
+            <div class="col-sm-4 control-label">
+                 <p>
+                      <small>Mensaje</small>
+                 </p>
             </div>
+<<<<<<< HEAD
             <div class="form-group">
 				<div class="col-sm-offset-3 col-sm-9">
           			<button type="submit" class="btn btn-ttc">Send</button>
@@ -117,5 +123,19 @@ layout: default
 		</div>
 	</section>
 	</div>
+=======
+            <div class="col-sm-8">
+                 <textarea class="form-control" rows="6" id="message" name="message"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+			<div class="col-sm-offset-3 col-sm-9">
+      			<button type="submit" class="btn btn-ttc">Send</button>
+      		</div>
+		</div>
+		<div id="map"></div>
+		<p class="direccion">Venustiano Carranza 68A, Valle de Anáhuac</p>
+	</form>
+>>>>>>> bb8602ed274c51bed463573b3c66056008dbba17
 </footer>
 
