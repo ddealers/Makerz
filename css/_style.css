@@ -910,9 +910,32 @@ div button.btn.btn-ttc:hover{
 			bottom: 235px;
 			font-size: 16px;
 		}
+/*------------------------------------------------------*/
+/*--------- POST ---------------*/
+
 @media screen and (max-width: 65em) {
 	body {
 		font-size: 85%;
+	}
+	body section#courses .courses > li.digital {
+		background: #212121 url(../imgs/verde2.png) no-repeat;
+		background-size: 86px;
+	}
+	body section#courses .courses > li h3 {
+		width: 400px;
+		padding-top: 10px;
+		margin-left: 94px;
+	}
+	body section#courses .courses > li div {
+		float: none;
+	}
+	body section#courses .courses > li div p {
+		box-sizing: border-box;
+		font-size: 16px;
+		width: 340px;
+		color: #fff;
+		opacity: 0.5;
+		padding: 1rem 0 0 6rem;
 	}
 }
 

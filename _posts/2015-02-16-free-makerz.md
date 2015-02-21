@@ -5,6 +5,6 @@ subtitle: "makerz"
 date:   2015-02-16 02:30:16
 img: imgs/music.png
 division: "free"
-photo: imgs/artisan.png
+photo: imgs/free.png
 ---
 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar

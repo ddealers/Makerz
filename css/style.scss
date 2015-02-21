@@ -804,7 +804,7 @@ body {
 			outline: 0;
 		}
 		button.btn.btn-ttc:hover{
-			color: #b46201;
+			background: #b46201;
 		}
 		p.direccion{
 			position: absolute;
@@ -818,6 +818,38 @@ body {
 	padding: 100px;
 	background: url(../imgs/back.png) fixed no-repeat;
 }
+/*POST----------------------------------------*/
+div.post{
+	background:#212121 url(../imgs/verde2.png) no-repeat 50px 10px;
+	color: #fff;
+	background-size: 13%;
+	position: relative;
+	padding: 40px;
+}
+	header.post-header{
+		border-bottom: 2px solid #02958b;
+		width: 1000px;
+		margin-left: 250px;
+		padding: 15px;
+	}
+		h1.post-title{
+			color: #02958b;
+		}
+		p.post-meta{
+			opacity: .5;
+		}
+	article.post-content {
+		margin-left: 250px;
+		width: 1000px;
+		line-height: 27px;
+		padding: 20px;
+	}	
+		h2#detalles {
+			padding: 30px 0px 5px;
+		}
+		h2#temario{
+			padding: 30px 0px 5px;
+		}
 /*
 .scroll {
 	position: fixed;
@@ -895,13 +927,195 @@ body {
 	color: #703b87;
 }
 */
-/*
+
 @media screen and (max-width: 65em) {
 	body {
 		font-size: 85%;
 	}
-}
+	body section#courses {
+		padding: 150px 0;
+		background: url(../imgs/back.png) no-repeat fixed;
+	}
+	body section#courses .courses > li {
+		padding: 2rem 0 0 0rem;
+		height: auto;
+		box-shadow: none;
+	}
+	body section#courses .courses > li.digital {
+		background: #212121 url(../imgs/verde2.png) no-repeat 100px 0px;
+		background-size: 155px;
+		padding-top: 340px;
+	}
+	body section#courses .courses > li h3 {
+		width: 400px;
+		padding-top: 10px;
+		margin-left: 94px;
+	}
+	body section#courses .courses > li div {
+		float: none;
+		width: 90%;
+	}
+	body section#courses .courses > li div p {
+		box-sizing: border-box;
+		font-size: 16px;
+		color: #fff;
+		opacity: 0.5;
+		padding: 1rem 0 0 3rem;
+	}
+	body section#courses .courses > li img{
+		float: none;
+		width: 65%;
+		padding: 90px 0px;
+	}
+	body section#courses .courses > li div a.digital{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*------*/
+	body section#courses .courses > li.free {
+		background: #212121 url(../imgs/music.png) no-repeat 100px 20px;
+		background-size: 155px;
+		padding-top: 260px;
+	}
+	body section#courses .courses > li div a.free{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*------*/
+	body section#courses .courses > li.design {
+		background: #212121 url(../imgs/azul.png) no-repeat 100px 20px;
+		background-size: 155px;
+		padding-top: 310px;
+	}
+	body section#courses .courses > li div a.design{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*------*/
+	body section#courses .courses > li.artisan{
+		background: #212121 url(../imgs/naranja.png) no-repeat 100px 20px;
+		background-size: 155px;
+		padding-top: 265px;
+	}
+	body section#courses .courses > li div a.artisan{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*------*/
+	body section#courses .courses > li.kids{
+		background: #212121 url(../imgs/verde.png) no-repeat 100px 20px;
+		background-size: 155px;
+		padding-top: 305px;
+	}
+	body section#courses .courses > li div a.kids{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*-------*/
+	body section#about{
+		box-shadow: none;
+	}
+	body section#about img {
+		opacity: .5;
+		width: 50%;
+		position: initial;
+		margin: auto;
+		display: block;
+		}body section#about img {
+		opacity: .5;
+		width: 50%;
+		position: initial;
+		margin: auto;
+		display: block;
+	}	
+	body section#about p.text-rotate{
+		border: none;
+		position: relative;
+		-webkit-transform: none;
+		left: 0px;
 
+	}
+	body section#about p{
+		padding: 20px;
+		width: 300px;
+	}
+	body section#nosotros{
+		padding: 50px 10px 50px 10px;
+		height: auto;
+		box-shadow: none;
+	}
+	body section#nosotros ul{
+		display: block;
+	}
+	body section#nosotros ul li {
+		padding: 0 0 80px 0;
+		z-index: 1;
+	}
+	body section#nosotros div.info{
+		width: 200px;
+		display: block;
+		right: 5px;
+		left: inherit;
+	}
+	body section#nosotros div.info p{
+		text-align: center;
+		width: 175px;
+	}
+	body section#nosotros p.frase {
+		width: 90%;
+		font-size: 16px;
+	}
+	body section#nosotros p.frase span{
+		margin-left: 0; 
+	}
+	body footer{
+		padding: 40px 10px 10px;
+	}
+	body footer .hi-icon-wrap{
+		margin: auto;
+		display: block;
+	}
+	body footer .hi-icon.hi-icon-mobile{
+		margin: 10px;
+	}
+		.hi-icon.hi-icon-screen{
+			margin: 10px;
+		}
+		.hi-icon.hi-icon-support{
+			margin: 10px;
+		}
+	body footer form #map {
+		height: 400px;
+		position: relative !important;
+		border-radius: 10px;
+		margin-top: 190px;
+		width: 335px;
+		margin-left: 210px;
+	}
+	body footer form input.form-control{
+		width: 94%;
+	}
+	body footer form textarea{
+		width: 94%;
+	}
+
+}
+/*
 @media screen and (max-width: 60em) {
 
 
