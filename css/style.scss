@@ -828,7 +828,7 @@ div.post{
 }
 	header.post-header{
 		border-bottom: 2px solid #02958b;
-		width: 1000px;
+		width: 900px;
 		margin-left: 250px;
 		padding: 15px;
 	}
@@ -840,7 +840,7 @@ div.post{
 		}
 	article.post-content {
 		margin-left: 250px;
-		width: 1000px;
+		width: 900px;
 		line-height: 27px;
 		padding: 20px;
 	}	
@@ -932,9 +932,13 @@ div.post{
 	body {
 		font-size: 85%;
 	}
+	body .background .large-header #background-canvas{
+		box-shadow: 0px 13px 104px #000;
+	}
 	body section#courses {
 		padding: 150px 0;
-		background: url(../imgs/back.png) no-repeat fixed;
+		background: url(../imgs/back.png) no-repeat; /*fixed*/
+		background-attachment: fixed;
 	}
 	body section#courses .courses > li {
 		padding: 2rem 0 0 0rem;
@@ -944,7 +948,7 @@ div.post{
 	body section#courses .courses > li.digital {
 		background: #212121 url(../imgs/verde2.png) no-repeat 100px 0px;
 		background-size: 155px;
-		padding-top: 340px;
+		padding-top: 339px;
 	}
 	body section#courses .courses > li h3 {
 		width: 400px;
@@ -978,7 +982,7 @@ div.post{
 	body section#courses .courses > li.free {
 		background: #212121 url(../imgs/music.png) no-repeat 100px 20px;
 		background-size: 155px;
-		padding-top: 260px;
+		padding-top: 263px;
 	}
 	body section#courses .courses > li div a.free{
 		position: absolute;
@@ -991,7 +995,7 @@ div.post{
 	body section#courses .courses > li.design {
 		background: #212121 url(../imgs/azul.png) no-repeat 100px 20px;
 		background-size: 155px;
-		padding-top: 310px;
+		padding-top: 311px;
 	}
 	body section#courses .courses > li div a.design{
 		position: absolute;
@@ -1004,7 +1008,7 @@ div.post{
 	body section#courses .courses > li.artisan{
 		background: #212121 url(../imgs/naranja.png) no-repeat 100px 20px;
 		background-size: 155px;
-		padding-top: 265px;
+		padding-top: 268px;
 	}
 	body section#courses .courses > li div a.artisan{
 		position: absolute;
@@ -1113,140 +1117,45 @@ div.post{
 	body footer form textarea{
 		width: 94%;
 	}
-
-}
-/*------------------- ANDROID */
-/*------------------- ANDROID */
-@media only screen 
-and (min-device-width : 600px) 
-and (max-device-width : 960px){
-	body section#courses {
-		background: none;
-		padding: 0px;
-	}
-	body section#courses .courses > li.digital {
-		background: #212121 url(../imgs/verde2.png) no-repeat 25px 0px;
-		background-size: 25%;
-		box-shadow: 0px 13px 104px #000;
-		padding-top: 100px;
-	}
-	body section#courses .courses > li h3 {
-		position: absolute;
-		top: 50px;
-		left: 130px;
-	}
-	body section#courses .courses > li div p {
-		width: 65%;
-		margin: 0px 0px 15px 160px;
-	}
-	body section#courses .courses > li img {
+	div.post {
+		background: #212122 url(../imgs/verde2.png) no-repeat 112px 10px;
+		color: #fff;
+		background-size: 39%;
 		position: relative;
-		margin: auto;
-		width: 500px;
-		display: block;
 	}
-	body section#courses .courses > li.free {
-		background: #212121 url(../imgs/music.png) no-repeat 25px 0px;
-		background-size: 28%;
-		box-shadow: 0px 13px 104px #000;
-		padding-top: 100px;
-	}
-	body section#courses .courses > li.design {
-		background: #212121 url(../imgs/azul.png) no-repeat 25px 0px;
-		background-size: 28%;
-		box-shadow: 0px 13px 104px #000;
-		padding-top: 100px;
-	}
-	body section#courses .courses > li.artisan {
-		background: #212121 url(../imgs/naranja.png) no-repeat 25px 0px;
-		background-size: 28%;
-		box-shadow: 0px 13px 104px #000;
-		padding-top: 100px;
-	}
-	body section#courses .courses > li.kids {
-		background: #212121 url(../imgs/verde.png) no-repeat 25px 0px;
-		background-size: 28%;
-		box-shadow: 0px 13px 104px #000;
-		padding-top: 100px;
-	}
-	body section#about p{
+	header.post-header{
+		border-bottom: 2px solid #02958b;
 		width: 90%;
+		margin-top: 255px;
+		margin-left: 0;
 	}
-	body section#nosotros ul li img{
-		margin-left: 30px; 
+	article.post-content {
+		margin-left: 0px;
+		width: 100%;
+		line-height: 28px;
+		padding: 0px;
+		margin-top: 15px;
 	}
-	body section#nosotros div.info{
-		width: 60%;
-		right: 30px;
-	}
-	body footer form #map{
-		
-	}
-}
-/*------------------- IPAD */
-/*------------------- IPAD */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-	body section#courses .courses > li.digital {
-		background: #212121 url(../imgs/verde2.png) no-repeat 25px 0px;
-		background-size: 200px;
-		padding: 100px 100px 50px 200px;
+	body section#courses .courses li {
 		box-shadow: 0px 13px 104px #000;
 	}
-	body section#courses .courses > li.free {
-		background: #212121 url(../imgs/music.png) no-repeat 25px 35px;
-		background-size: 230px;
-		padding: 100px 100px 50px 200px;
-		box-shadow: 0px 13px 104px #000;
-	}
-	body section#courses .courses > li.design {
-		background: #212121 url(../imgs/azul.png) no-repeat 25px 0px;
-		background-size: 200px;
-		padding: 100px 100px 50px 200px;
-		box-shadow: 0px 13px 104px #000;
-	}
-	body section#courses .courses > li.artisan{
-		background: #212121 url(../imgs/naranja.png) no-repeat 25px 0px;
-		background-size: 220px;
-		padding: 100px 100px 50px 200px;
-		box-shadow: 0px 13px 104px #000;
-	}
-	body section#courses .courses > li.kids{
-		background: #212121 url(../imgs/verde.png) no-repeat 25px 0px;
-		background-size: 220px;
-		padding: 100px 100px 50px 200px;
-		box-shadow: 0px 13px 104px #000;
-	}
-	body section#about img {
-		position: absolute;
-		right: 50px;
+	.punto{
+		display: none;
+	}	
+	body section#courses {
+		padding: 0;
+		background: none;
 	}
 	body section#about p {
-		width: 400px;
+		text-align: left;
+	}	
+	body section#courses .courses > li div p{
+		text-align: left;
 	}
-	body section#nosotros div.info {
-		left: 100px;
-	}
-	body section#about {
-		box-shadow: 0px 13px 104px #000;
-	}
-	body div.form-group{
-		width: 45%;
-	}
-	body footer form #map{
-		position: absolute !important;
-		width: 45%;
-		right: 40px;
-		top: 100px;
-	}
-	body footer p.direccion {
-		right: 165px;
-		bottom: 30px;
-	}
+
 }
 /*
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 60em) { 
 
 
 	.ha-header-perspective > div,
