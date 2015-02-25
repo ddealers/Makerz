@@ -1264,11 +1264,40 @@ and (max-device-width : 1024px) {
 	body section#about p {
 		width: 400px;
 	}
+	body section#about {
+		box-shadow: 0px 13px 104px #000;
+	}
 	body section#nosotros div.info {
 		left: 100px;
 	}
-	body section#about {
-		box-shadow: 0px 13px 104px #000;
+	section#nosotros ul {
+		display: inline-flex !important;
+		height: 950px;
+	}
+	section#nosotros ul li{
+		margin-right: 100px;
+	}
+	section#nosotros ul li img{
+		height: 250px;
+		position: absolute;
+	}
+	section#nosotros ul li.w{
+		right: 60px;
+	}
+	section#nosotros ul li.l{
+		left: 100px;
+	}
+	section#nosotros ul li.a{
+		top: 450px;
+		right: 560px;
+	}
+	section#nosotros ul li.j{
+		top: 450px;
+		right: 400px;
+	}
+	section#nosotros div.info {
+		left: 145px !important;
+		width: 250px !important;
 	}
 	body div.form-group{
 		width: 45%;
@@ -1282,6 +1311,18 @@ and (max-device-width : 1024px) {
 	body footer p.direccion {
 		right: 165px;
 		bottom: 30px;
+	}
+	div.post {
+		background: #212122 url(../imgs/verde2.png) no-repeat 84px 35px;
+		background-size: 15%;
+	}
+	header.post-header{
+		margin: 0px 230px;
+		width: 70%;
+	}
+	article.post-content{
+		margin: 30px 230px;
+		width: 70%;
 	}
 }
 /*
