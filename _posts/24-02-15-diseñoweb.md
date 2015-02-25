@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Diseño web con HTML5 y CSS3"
+title:  "Web Design"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "digital"

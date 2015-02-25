@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hybrid Mobile"
+title:  "Hybrid Mobile Apps"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "digital"
