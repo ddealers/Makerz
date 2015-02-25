@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "Introducción a la Programación"
+title:  "Webapps con AngularJS"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "digital"
-photo: imgs/programacion.jpg
+photo: imgs/angular.png
 ---
-Es el proceso de diseñar, codificar, depurar y mantener el código fuente de programas computacionales. El código fuente es escrito en un lenguaje de programación. El propósito de la programación es crear programas que exhiban un comportamiento deseado. 
-
-El proceso de escribir código requiere frecuentemente conocimientos en varias áreas distintas, además del dominio del lenguaje a utilizar, algoritmos especializados y lógica formal. 
+Es un framework de JavaScript de código abierto, mantenido por Google, que ayuda con la gestión de lo que se conoce como aplicaciones de una sola página. Su objetivo es aumentar las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador (MVC), en un esfuerzo para hacer que el desarrollo y las pruebas sean más fáciles.
 
 ## Detalles
 Total de horas: **36hrs**
