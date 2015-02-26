@@ -1,3 +1,500 @@
+/*==========================*/
+@media screen and (max-width: 65em) {
+	body {
+		font-size: 85%;
+	}
+	body .background .large-header #background-canvas{
+		box-shadow: 0px 13px 104px #000;
+	}
+	body section#courses {
+		padding: 150px 0;
+		background: url(../imgs/back.png) no-repeat; /*fixed*/
+		background-attachment: fixed;
+	}
+	body section#courses .courses > li {
+		padding: 2rem 0 0 0rem;
+		height: auto;
+		box-shadow: none;
+	}
+	body section#courses .courses > li.digital {
+		background: #212121 url(../imgs/verde2.png) no-repeat 100px 0px;
+		background-size: 155px;
+		padding-top: 339px;
+	}
+	body section#courses .courses > li h3 {
+		width: 400px;
+		padding-top: 10px;
+		margin-left: 60px;
+		font-size: 19px;
+	}
+	body section#courses .courses > li div {
+		float: none;
+		width: 90%;
+	}
+	body section#courses .courses > li div p {
+		box-sizing: border-box;
+		font-size: 16px;
+		color: #fff;
+		opacity: 0.5;
+		padding: 1rem 0 0 3rem;
+	}
+	body section#courses .courses > li img{
+		float: none;
+		width: 65%;
+		padding: 90px 0px;
+	}
+	body section#courses .courses > li div a.digital{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*------*/
+	body section#courses .courses > li.free {
+		background: #212121 url(../imgs/music.png) no-repeat 100px 20px;
+		background-size: 155px;
+		padding-top: 263px;
+	}
+	body section#courses .courses > li div a.free{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*------*/
+	body section#courses .courses > li.design {
+		background: #212121 url(../imgs/azul.png) no-repeat 100px 20px;
+		background-size: 155px;
+		padding-top: 311px;
+	}
+	body section#courses .courses > li div a.design{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*------*/
+	body section#courses .courses > li.artisan{
+		background: #212121 url(../imgs/naranja.png) no-repeat 100px 20px;
+		background-size: 155px;
+		padding-top: 268px;
+	}
+	body section#courses .courses > li div a.artisan{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*------*/
+	body section#courses .courses > li.kids{
+		background: #212121 url(../imgs/verde.png) no-repeat 100px 20px;
+		background-size: 155px;
+		padding-top: 305px;
+	}
+	body section#courses .courses > li div a.kids{
+		position: absolute;
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	/*-------*/
+	body section#about{
+		box-shadow: none;
+	}
+	body section#about img {
+		opacity: .5;
+		width: 50%;
+		position: initial;
+		margin: auto;
+		display: block;
+		}body section#about img {
+		opacity: .5;
+		width: 50%;
+		position: initial;
+		margin: auto;
+		display: block;
+	}	
+	body section#about p.text-rotate{
+		border: none;
+		position: relative;
+		-webkit-transform: none;
+		left: 0px;
+
+	}
+	body section#about p{
+		padding: 20px;
+		width: 300px;
+	}
+	body section#nosotros{
+		padding: 50px 10px 50px 10px;
+		height: auto;
+		box-shadow: none;
+	}
+	body section#nosotros ul{
+		display: block;
+	}
+	body section#nosotros ul li {
+		padding: 0 0 80px 0;
+		z-index: 1;
+	}
+	body section#nosotros div.info{
+		width: 200px;
+		display: block;
+		right: 5px;
+		left: inherit;
+	}
+	body section#nosotros div.info p{
+		text-align: center;
+		width: 175px;
+	}
+	body section#nosotros p.frase {
+		width: 90%;
+		font-size: 16px;
+	}
+	body section#nosotros p.frase span{
+		margin-left: 0; 
+	}
+	body footer{
+		padding: 40px 10px 10px;
+	}
+	body footer .hi-icon-wrap{
+		margin: auto;
+		display: block;
+	}
+	body footer .hi-icon.hi-icon-mobile{
+		margin: 10px;
+	}
+		.hi-icon.hi-icon-screen{
+			margin: 10px;
+		}
+		.hi-icon.hi-icon-support{
+			margin: 10px;
+		}
+	body footer form #map {
+		height: 400px;
+		position: relative !important;
+		border-radius: 10px;
+		margin-top: 190px;
+		width: 335px;
+		margin-left: 210px;
+	}
+	body footer form input.form-control{
+		width: 94%;
+	}
+	body footer form textarea{
+		width: 94%;
+	}
+	div.post {
+		background: #212122 url(../imgs/verde2.png) no-repeat 112px 10px;
+		color: #fff;
+		background-size: 39%;
+		position: relative;
+	}
+	header.post-header{
+		border-bottom: 2px solid #02958b;
+		width: 90%;
+		margin-top: 255px;
+		margin-left: 0;
+	}
+	article.post-content {
+		margin-left: 0px;
+		width: 100%;
+		line-height: 28px;
+		padding: 0px;
+		margin-top: 15px;
+	}
+	body section#courses .courses li {
+		box-shadow: 0px 13px 104px #000;
+	}
+	.punto{
+		display: none;
+	}	
+	body section#courses {
+		padding: 0;
+		background: none;
+	}
+	body section#about p {
+		text-align: left;
+	}	
+	body section#courses .courses > li div p{
+		text-align: left;
+	}
+}
+/*------------------- ANDROID */
+/*------------------- ANDROID */
+@media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 960px){
+	body section#courses {
+		background: none;
+		padding: 0px;
+	}
+	body section#courses .courses > li.digital {
+		background: #212121 url(../imgs/verde2.png) no-repeat 25px 0px;
+		background-size: 25%;
+		box-shadow: 0px 13px 104px #000;
+		padding-top: 100px;
+	}
+	body section#courses .courses > li h3 {
+		position: absolute;
+		top: 50px;
+		left: 130px;
+	}
+	body section#courses .courses > li div p {
+		width: 65%;
+		margin: 0px 0px 15px 160px;
+	}
+	body section#courses .courses > li img {
+		position: relative;
+		margin: auto;
+		width: 500px;
+		display: block;
+	}
+	body section#courses .courses > li.free {
+		background: #212121 url(../imgs/music.png) no-repeat 25px 0px;
+		background-size: 28%;
+		box-shadow: 0px 13px 104px #000;
+		padding-top: 100px;
+	}
+	body section#courses .courses > li.design {
+		background: #212121 url(../imgs/azul.png) no-repeat 25px 0px;
+		background-size: 28%;
+		box-shadow: 0px 13px 104px #000;
+		padding-top: 100px;
+	}
+	body section#courses .courses > li.artisan {
+		background: #212121 url(../imgs/naranja.png) no-repeat 25px 0px;
+		background-size: 28%;
+		box-shadow: 0px 13px 104px #000;
+		padding-top: 100px;
+	}
+	body section#courses .courses > li.kids {
+		background: #212121 url(../imgs/verde.png) no-repeat 25px 0px;
+		background-size: 28%;
+		box-shadow: 0px 13px 104px #000;
+		padding-top: 100px;
+	}
+	body section#about p{
+		width: 90%;
+	}
+	body section#nosotros ul li img{
+		margin-left: 30px; 
+	}
+	body section#nosotros div.info{
+		width: 60%;
+		right: 30px;
+	}
+	body footer form #map{
+		
+	}
+}
+/*------------------- IPAD */
+/*------------------- IPAD */
+@media only screen and (max-width : 768px){
+	body section#courses .courses > li h3{
+		left: 160px;
+	}
+	body section#courses .courses > li div p {
+		width: 100%;
+		margin: 0px 0px 15px 0px;
+	}
+	body section#courses .courses > li.digital {
+		background-size: 160px !important;
+	}
+	body section#courses .courses > li img{
+		margin-top: 50px;
+	}
+	body section#about p {
+		width: auto !important;
+	}
+	body section#about img {
+		position: absolute;
+		right: 100px;
+		width: 70%;
+		opacity: .3;
+	}
+	body section#about p.text-rotate {
+		-webkit-transform: none;
+		left: 50px;
+	}
+	body section#nosotros ul li img{
+		margin-left: 50px; 
+	}
+	body footer p.direccion{
+		right: 55px;
+	}
+	body section#nosotros p.frase{
+		padding-top: 30px;
+	}
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	body section#courses .courses > li.digital {
+		background: #212121 url(../imgs/verde2.png) no-repeat 25px 0px;
+		background-size: 200px;
+		padding: 100px 100px 50px 200px;
+		box-shadow: 0px 13px 104px #000;
+	}
+	body section#courses .courses > li.free {
+		background: #212121 url(../imgs/music.png) no-repeat 25px 35px;
+		background-size: 230px;
+		padding: 100px 100px 50px 200px;
+		box-shadow: 0px 13px 104px #000;
+	}
+	body section#courses .courses > li.design {
+		background: #212121 url(../imgs/azul.png) no-repeat 25px 0px;
+		background-size: 200px;
+		padding: 100px 100px 50px 200px;
+		box-shadow: 0px 13px 104px #000;
+	}
+	body section#courses .courses > li.artisan{
+		background: #212121 url(../imgs/naranja.png) no-repeat 25px 0px;
+		background-size: 220px;
+		padding: 100px 100px 50px 200px;
+		box-shadow: 0px 13px 104px #000;
+	}
+	body section#courses .courses > li.kids{
+		background: #212121 url(../imgs/verde.png) no-repeat 25px 0px;
+		background-size: 220px;
+		padding: 100px 100px 50px 200px;
+		box-shadow: 0px 13px 104px #000;
+	}
+	body section#courses .courses > li div p{
+		width: 90%;
+		margin: 0px 0px 15px 60px; 
+	}
+	body section#courses .courses > li h3{
+		left: 250px;
+		width: 500px;
+	}
+	body section#about img {
+		position: absolute;
+		right: 50px;
+	}
+	body section#about p {
+		width: 400px;
+	}
+	body section#about {
+		box-shadow: 0px 13px 104px #000;
+	}
+	body section#nosotros ul li img{
+		margin-left: 100px;
+	}
+/*
+	body section#nosotros div.info {
+		left: 100px;
+	}
+	section#nosotros ul {
+		display: inline-flex !important;
+		height: 950px;
+	}
+	section#nosotros ul li{
+		margin-right: 100px;
+	}
+	section#nosotros ul li img{
+		height: 250px;
+		position: absolute;
+	}
+	section#nosotros ul li.w{
+		right: 60px;
+	}
+	section#nosotros ul li.l{
+		left: 100px;
+	}
+	section#nosotros ul li.a{
+		top: 450px;
+		right: 560px;
+	}
+	section#nosotros ul li.j{
+		top: 450px;
+		right: 400px;
+	}
+	section#nosotros div.info {
+		left: 145px !important;
+		width: 250px !important;
+	}
+*/
+	body div.form-group{
+		width: 45%;
+	}
+	body footer form #map{
+		position: absolute !important;
+		width: 45%;
+		right: 40px;
+		top: 100px;
+	}
+	body footer p.direccion {
+		right: 165px;
+		bottom: 30px;
+	}
+	div.post {
+		background: #212122 url(../imgs/verde2.png) no-repeat 84px 35px;
+		background-size: 15%;
+	}
+	header.post-header{
+		margin: 0px 230px;
+		width: 70%;
+	}
+	article.post-content{
+		margin: 30px 230px;
+		width: 70%;
+	}
+}
+/*
+@media screen and (max-width: 60em) { 
+
+
+	.ha-header-perspective > div,
+	.ha-header nav {
+		text-align: center;
+	}
+
+	.ha-header h1 {
+		padding: 10px 0;
+		height: 60%;
+	}
+
+	.ha-header .ha-header-bottom nav {
+		padding: 40px 0px;
+	}
+
+	.ha-header nav {
+		display: block;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 38em) {
+	section {
+		font-size: 1.3em;
+	}
+
+	.ha-header h1 {
+		font-size: 2em;
+	}
+
+	.ha-header nav {
+		font-size: 60%;
+	}
+}
+
+
+@media only screen and (max-width : 768px) {
+	.background .main-title{
+		font-size: 3em;
+	}
+}
+*/
+/*====================*/
+
+
 *{
 	margin: 0;
 	padding: 0;
