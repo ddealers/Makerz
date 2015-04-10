@@ -1,20 +1,6 @@
 ---
 layout: default
 ---
-<section id="courses">
-	<ul class="courses">
-	{% for post in site.posts %}
-		<li class="{{post.division}}">
-			<h3 class="{{post.division}}">{{ post.title }} <span class="white">{{post.subtitle}}</span></h3>
-			<div>
-				{{ post.excerpt }}
-				<a class="{{post.division}}" href="{{ post.url | prepend: post.baseurl }}">Ver detalle</a>
-			</div>
-			<img class="img" src="{{post.photo | prepend: post.baseurl }}">
-		</li>
-	{% endfor %}
-	</ul>
-</section>
 <section id="about">
 	<div class="title-parrafo">
 		<p class="text-rotate">QUIENES SOMOS</p>
