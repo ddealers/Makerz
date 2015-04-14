@@ -606,27 +606,7 @@ body {
 		color: #fff !important;
 		opacity: 0.5 !important;
 	}
-		p.digital{
-			color: #02958b;
-			opacity: 1;
-		}
-		p.artisan{
-			color: #f2a007;
-			opacity: 1;
-		}
-		p.free{
-			color: #860645;
-			opacity: 1;
-		}
-		p.design{
-			color: #0963be;
-			opacity: 1;
-		}
-		p.kids{
-			color: #b7c705;
-			opacity: 1;
-		}
-	ul li a img{
+		ul li a img{
 		width: 125px;
 		margin-left: 50px;
 		margin-top: 20px;

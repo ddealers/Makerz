@@ -130,5 +130,13 @@ $(document).on('ready',
 			  	}
 			});
 	 	};
-	 $('.carousel').slick();
+	 setInterval(function() {
+    	var nextItem = $('.item.active').fadeOut().removeClass('active').next('.item');
+
+    	if (nextItem.length === 0) {
+      		nextItem = $('.item').first();
+    	}
+
+    	nextItem.fadeIn().addClass('active');
+	}, 4000);  
 });
