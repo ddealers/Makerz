@@ -68,47 +68,41 @@ body {
 	font-size: 1em;
 	line-height: 1.25;
 	font-family: 'Raleway', Calibri, Arial, sans-serif;
-	.background{
-		.large-header {
-			position: relative;
+	.site-header{
+		.container-back{
 			width: 100%;
-			overflow: hidden;
+			height: 700px;
+			display: block;
 			background-size: cover;
-			background-position: center center;
-			z-index: 1;
-			height: 100%;
-			#background-canvas{
-				height: 100% !important;
-				background: url(../imgs/fondo-.png)no-repeat;
-				background-size: cover;
-			}
-			.main-title {
-				position: absolute;
-				margin: 0;
-				padding: 0;
-				color: #ea6c13;
-				text-align: center;
-				top: 50%;
-				left: 50%;
-				-webkit-transform: translate3d(-50%,-50%,0);
-				transform: translate3d(-50%,-50%,0);
-				text-transform: uppercase;
-				font-size: 4.2em;
-				letter-spacing: 0.1em;
-				width: 70%;
-				color: #fff;
-				text-shadow: 0px 0px 20px rgba(0,0,0,0.3);
-				@include media-query($x-small){
-					font-size: 54px;
-				}
-				.thin {
-					font-weight: 200;
+			.container-title{
+				.main-title {
+					position: absolute;
+					margin: 0;
+					padding: 0;
+					color: #ea6c13;
+					text-align: center;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate3d(-50%,-50%,0);
+					transform: translate3d(-50%,-50%,0);
+					text-transform: uppercase;
+					font-size: 4.2em;
+					letter-spacing: 0.1em;
+					width: 70%;
 					color: #fff;
-					font-size: 0.6em;
-				}
-				.punto{
+					text-shadow: 0px 0px 20px rgba(0,0,0,0.3);
 					@include media-query($x-small){
-						display: none;
+						font-size: 54px;
+					}
+					.thin {
+						font-weight: 200;
+						color: #fff;
+						font-size: 0.6em;
+					}
+					.punto{
+						@include media-query($x-small){
+							display: none;
+						}
 					}
 				}
 			}
