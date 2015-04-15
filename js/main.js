@@ -130,7 +130,7 @@ $(document).on('ready',
 			  	}
 			});
 	 	};
-	 setInterval(function() {
+	setInterval(function() {
     	var nextItem = $('.item.active').fadeOut().removeClass('active').next('.item');
 
     	if (nextItem.length === 0) {
