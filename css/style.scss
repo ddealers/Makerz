@@ -461,6 +461,46 @@ body {
 			background-size: 30%;
 		}
 	}	
+	header.post-header{
+		border-bottom: 2px solid #02958b;
+		width: 900px;
+		margin-left: 250px;
+		padding: 15px;
+		@include media-query( $medium){
+			margin-left: 150px;
+			width: 70%;
+		}
+		@include media-query( $x-small){
+			margin: 200px 0px 0px;
+			width: 90%;
+		}
+		h1.post-title{
+			color: #02958b;
+		}
+		p.post-meta{
+			opacity: .5;
+		}
+	article.post-content {
+		margin-left: 250px;
+		width: 900px;
+		line-height: 27px;
+		padding: 20px;
+		@include media-query( $medium){
+			margin-left: 150px;
+			width: 70%;
+		}
+		@include media-query( $x-small){
+			margin-left: 0px;
+			width: 85%;
+		}
+	}
+		h2#detalles {
+				padding: 30px 0px 5px;
+			}
+			h2#temario{
+				padding: 30px 0px 5px;
+			}
+		}	
 }		
 
 
