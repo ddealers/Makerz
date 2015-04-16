@@ -144,8 +144,12 @@ $(document).on('ready',
 
 	jQuery('.parallax-layer')
 	.parallax(
-		{xparallax: '200px', yparallax: '0px', decay: '0.3', frameDuration: '30'},
-		{xparallax: '50px', yparallax: '0px',}
+		{xparallax: '50px', yparallax: '0px', decay: '0.3', frameDuration: '30'},
+		{xparallax: '50px', yparallax: '0px'},
+		{xparallax: '20px', yparallax: '0px'},
+		{xparallax: '0px', yparallax: '0px'},
+		{xparallax: '0px', yparallax: '0px', decay: '0.6'},
+		{xparallax: '0px', yparallax: '0px', decay: '0.9'}
 		);
 });
 
