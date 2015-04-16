@@ -110,31 +110,40 @@ html{
 				overflow:hidden;
 				.parallax-layer{
 					position: absolute;
+					width: 100%;
+  					height: 100%;
 					&.img0{
-						background: url(../imgs/PARALLAX/fondo-parallax.png);
-						background-size: cover;
+						img{
+							position: absolute;
+							margin: auto;
+							width: 120%;
+							top: 0;
+							bottom: 0;
+							left: 50%;
+							margin-left: -60%;
+						}
 					}
 					&.img1{
-						top: 0px;
-						 z-index: 1;
+						z-index: 1;
+						img{
+							position: absolute;
+  							top: -20px;
+						}
 					}
 					&.img2{
-						left: 0px;
-						bottom: 0px;
+						img{
+							position: absolute;
+							bottom: -10px;
+							left: -20px;
+						}
 					}
 					&.img3{
-						right: 0px;;
-						bottom: 0px;;
 						z-index: 2;
 					}
 					&.img4{
-						bottom: 0px;
-						right: 200px;
 						z-index: 1;
 					}
 					&.img5{
-						right: 3px;
-  						bottom: 0px;
 					}
 				}
 			}
