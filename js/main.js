@@ -141,12 +141,12 @@ $(document).on('ready',
 	}, 4000);  
 
 // P A R A L L A X //
-
-	jQuery('.parallax-layer')
-	.parallax(
-		{xparallax: '200px', yparallax: '0px', decay: '0.3', frameDuration: '30'},
-		{xparallax: '50px', yparallax: '0px',}
-		);
+	$('.parallax-layer').parallax(
+		{},
+		{xparallax: '20px', yparallax: '10px'},
+		{xparallax: '0px', yparallax: '20px'},
+		{xparallax: '20px', yparallax: '10px'}
+	);
 });
 
 
