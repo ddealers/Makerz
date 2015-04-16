@@ -139,4 +139,24 @@ $(document).on('ready',
 
     	nextItem.fadeIn().addClass('active');
 	}, 4000);  
+
+// P A R A L L A X //
+
+	jQuery('.parallax-layer')
+	.parallax(
+		{xparallax: '200px', yparallax: '0px', decay: '0.3', frameDuration: '30'},
+		{xparallax: '50px', yparallax: '0px',}
+		);
 });
+
+
+
+
+
+
+
+
+
+
+
+
