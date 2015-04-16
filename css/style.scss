@@ -139,6 +139,7 @@ html{
 				}
 			}
 		}
+<<<<<<< HEAD
 		.page-content{
 			.wrapper{
 				  	position: relative;
@@ -200,6 +201,126 @@ html{
 				padding: 5rem 0;
 				.title-parrafo{
 					@include flex(1 60%);
+=======
+	}
+	.page-content{
+		.wrapper{
+			#fixed1{
+				background: url(../imgs/back-slide3.png) no-repeat fixed; 
+				position: relative;
+				width: 100%;
+				height: 350px;
+				}
+			#cursos{
+				#tit-cursos{
+					position: relative;
+					font-size: 40px;
+					top: 40px;
+					left: 60px;
+					font-family: raleway;
+				}	
+				.flex-container{
+					width: 100%;
+					height: auto;
+					padding: 0;
+	  				margin: 0;
+	  				margin-top: 70px;
+					list-style: none;
+					display: -webkit-box;
+					display: -moz-box;
+					display: -ms-flexbox;
+					display: -webkit-flex;
+					display: inline-flex;
+					-webkit-flex-flow: wrap;
+					justify-content: space-around;
+					.icono-curso{
+						width: 170px;
+					  	height: 230px;
+					  		img{
+					  			width: 170px;
+					  			height: 170px;
+					  		}
+							#curso-digital{
+								position: relative;
+								font-size: 30px;
+								left: 41px;
+							}
+							#curso-artisan{
+								position: relative;
+								font-size: 30px;
+								left: 44px;
+							}
+							#curso-music{
+								position: relative;
+								font-size: 30px;
+								left: 44px;
+							}
+							#curso-robo{
+								position: relative;
+								font-size: 30px;
+								left: 55px;
+							}
+							#curso-travel{
+								position: relative;
+								font-size: 30px;
+								left: 45px;
+							}
+					}	
+
+				}
+			}
+			#fixed2{
+				background: url(../imgs/back-slide1.png) no-repeat fixed;
+				position: relative;
+				width: 100%;
+				height: 350px;	
+				}
+		}	
+	}
+	section {
+		padding: 1em;
+		text-align: center;
+		width: 100%;
+		text-align: justify;
+		padding: 0;
+		margin: 0;
+		color: #ecf0f1;
+		line-height: 1.3;
+		font-size: 1.8em;
+		box-sizing: border-box;
+		p { 
+			opacity: 0.6;
+			font-size: 16px;
+			line-height: 28px;
+			width: 500px;
+			color: #000;
+		}
+		&#about{
+			width: 100%;
+			display: -webkit-flex;
+			display: flex;
+			@include flex-flow(row wrap);
+			background: #E75244;
+			position: relative;
+			z-index: 1;
+			box-shadow: 0px 13px 104px #000;
+			padding: 5rem 0;
+			.title-parrafo{
+				@include flex(1 60%);
+				@include media-query( $medium ){
+						@include flex(1 60%);
+					}
+					@include media-query( $small ){
+						@include flex(1 100%);
+					}
+				.text-rotate{
+					position: absolute;
+					right: 59%;
+					-webkit-transform: rotate(-90deg);
+					font-size: 30px;
+					z-index: 1;
+					background: none;
+>>>>>>> a9e1265af0fcb9b5d7ca60fed8cba6e48865b9ed
 					@include media-query( $medium ){
 							@include flex(1 60%);
 						}
@@ -258,7 +379,58 @@ html{
 							padding-top: 30px;
 						}
 					}
+<<<<<<< HEAD
 				}		
+=======
+				}
+			}		
+		}
+	}
+	#fixed3{
+		background: url(../imgs/back-slide.png) no-repeat fixed;
+		position: relative;
+		width: 100%;
+		height: 350px;
+	}
+	footer{
+		background: #212121;
+		position: relative;
+		padding: 50px;
+		.contact{
+			text-align: center;
+			font-size: 25px;
+			opacity: 0.3;
+			border: 1px solid;
+			padding: 10px;
+			width: 200px;
+			margin: auto;
+			color: #fff;
+		}
+		.hi-icon-wrap {
+			text-align: center;
+			margin: 0 auto;
+			padding: 1em 0 0em;
+		}
+		/* Effect 1 */
+		.hi-icon-effect-1 .hi-icon {
+			background: rgba(255,255,255,0.1);
+			-webkit-transition: background 0.2s, color 0.2s;
+			-moz-transition: background 0.2s, color 0.2s;
+			transition: background 0.2s, color 0.2s;
+			&:after {
+				top: -7px;
+				left: -7px;
+				padding: 7px;
+				box-shadow: 0 0 0 4px #fff;
+				-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+				-webkit-transform: scale(.8);
+				-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+				-moz-transform: scale(.8);
+				-ms-transform: scale(.8);
+				transition: transform 0.2s, opacity 0.2s;
+				transform: scale(.8);
+				opacity: 0;
+>>>>>>> a9e1265af0fcb9b5d7ca60fed8cba6e48865b9ed
 			}
 		}
 		footer{
