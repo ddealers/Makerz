@@ -257,7 +257,6 @@ html{
 					font-size: 30px;
 					z-index: 1;
 					background: none;
->>>>>>> a9e1265af0fcb9b5d7ca60fed8cba6e48865b9ed
 					@include media-query( $medium ){
 							@include flex(1 60%);
 						}
