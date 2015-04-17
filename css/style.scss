@@ -124,26 +124,55 @@ html{
 						}
 					}
 					&.img1{
-						z-index: 1;
+						z-index: 2;
 						img{
 							position: absolute;
   							top: -20px;
+  							z-index: 1;
 						}
 					}
 					&.img2{
 						img{
 							position: absolute;
 							bottom: -10px;
-							left: -20px;
+							left: -50px;
+							z-index: 1;
 						}
 					}
 					&.img3{
-						z-index: 2;
+						img{
+							position: absolute;
+							z-index: 2;
+							right: -20px;
+							bottom: 0px;
+						}
 					}
 					&.img4{
-						z-index: 1;
+						z-index: 2;
+						img{
+							position: absolute;
+							z-index: 2;
+							right: 0px;
+							left: 0px;
+							margin: auto;
+							bottom: -10px;
+						}
 					}
 					&.img5{
+						img{
+							position: absolute;
+							z-index: 0;
+							right: 30px;
+							bottom: -50px;
+						}
+					}
+					&.img6{
+						img{
+							position: absolute;
+							z-index: 0;
+							left: 0px;
+							bottom: -100px;
+						}
 					}
 				}
 			}

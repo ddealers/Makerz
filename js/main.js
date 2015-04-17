@@ -143,9 +143,13 @@ $(document).on('ready',
 // P A R A L L A X //
 	$('.parallax-layer').parallax(
 		{},
+		{xparallax: '40px', yparallax: '10px'},
+		{xparallax: '0px', yparallax: '30px'},
+		{xparallax: '50px', yparallax: '10px'},
+		{xparallax: '0px', yparallax: '10px'},
+		{xparallax: '600px', yparallax: '20px'},
 		{xparallax: '20px', yparallax: '10px'},
-		{xparallax: '0px', yparallax: '20px'},
-		{xparallax: '20px', yparallax: '10px'}
+		{xparallax: '100px', yparallax: '10px'}
 	);
 });
 
