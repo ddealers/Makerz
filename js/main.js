@@ -148,9 +148,10 @@ $(document).on('ready',
 		{xparallax: '50px', yparallax: '10px'},
 		{xparallax: '0px', yparallax: '10px'},
 		{xparallax: '600px', yparallax: '20px'},
-		{xparallax: '20px', yparallax: '10px'},
+		{xparallax: '160px', yparallax: '10px'},
 		{xparallax: '100px', yparallax: '10px'}
 	);
+	
 });
 
 

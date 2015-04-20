@@ -1,45 +1,42 @@
 ---
 layout: default
 ---
-<div id="fixed1"></div>
 <section id="cursos">
 	<p id="tit-cursos">Cursos</p>
+	<p class="frase">No intentes cambiar un sistema, construye uno nuevo que vuelva al anterior obsoleto.<span><br>"Richard Buckminster Fuller"</span></p>
 	<div class="flex-container">
 		<div class="icono-curso">
 			<a href="#"><img src="../imgs/digital-makerz.png"></a>
-			<p id="curso-digital">Digital</p>
+			<p id="curso-digital" class="iconText">Digital</p>
 		</div>
 		<div class="icono-curso">
 			<a href="#"><img class="icono-curso" src="../imgs/artisan-makerz.png"></a>
-			<p id="curso-artisan">Artisan</p>
+			<p id="curso-artisan" class="iconText">Artisan</p>
 		</div>
 		<div class="icono-curso">
 			<a href="#"><img class="icono-curso" src="../imgs/music-makerz.png"></a>
-			<p id="curso-music">Music</p>
+			<p id="curso-music" class="iconText">Music</p>
 		</div>
 		<div class="icono-curso">
 			<a href="#"><img class="icono-curso" src="../imgs/robo-makerz.png"></a>
-			<p id="curso-robo">Robo</p>
+			<p id="curso-robo" class="iconText">Robo</p>
 		</div>
 		<div class="icono-curso">
 			<a href="#"><img class="icono-curso" src="../imgs/travel-makerz.png"></a>
-			<p id="curso-travel">Travel</p>
+			<p id="curso-travel" class="iconText">Travel</p>
 		</div>	
 	</div>
-</section>	
-<div id="fixed2"></div>
-<section id="about">
-			<div class="title-parrafo">
-				<p class="text-rotate">QUIENES SOMOS</p>
-				<p>No somos una academia pero tampoco un colectivo. Somos un grupo de amigos que disfrutan de trabajar en la profesión que escogieron, buscaron o incluso descubrieron.</p>
-				<p>Nuestro propósito es generar cambios sostenibles que impacten positivamente en la sociedad aplicando creatividad para buscar oportunidades y resolver problemas. Es por ello que nuestro motor gira con curiosidad, optimismo, sentido del humor, empeño y la oportunidad de siempre preguntar, enseñar o aprender de los demás, de nuestros experimentos y de nuestros errores también, todo esto para mejorar día con día y tratar de hacer de este un mundo mejor.</p>
-			 	<p>¿Quiénes conforman Makerz? Artistas, Arquitectos, Diseñadores, Comunicólogos, Fashionistas, Gastrónomos, Músicos, Emprendedores, Inventores, Viajeros, Escritores y todo aquel que ame lo que hace.</p>
-			</div>	
-		<div class="img">
-			<img src="./imgs/part-1.png">
+	<div class="title-parrafo">
+		<p id="tit-cursos">Quienes somos</p>
+		<div class="somos">
+			<p class="parrafo">No somos una academia pero tampoco un colectivo. Somos un grupo de amigos que disfrutan de trabajar en la 	profesión que escogieron, buscaron o incluso descubrieron.</p>
+			<br>
+			<p class="parrafo">Nuestro propósito es generar cambios sostenibles que impacten positivamente en la sociedad aplicando 	creatividad para buscar oportunidades y resolver problemas. Es por ello que nuestro motor gira con curiosidad, optimismo, 	sentido del humor, empeño y la oportunidad de siempre preguntar, enseñar o aprender de los demás, de nuestros experimentos y 	de nuestros errores también, todo esto para mejorar día con día y tratar de hacer de este un mundo mejor.</p>
+			<br>
+	 		<p class="parrafo">¿Quiénes conforman Makerz? Artistas, Arquitectos, Diseñadores, Comunicólogos, Fashionistas, Gastrónomos, 	Músicos, Emprendedores, Inventores, Viajeros, Escritores y todo aquel que ame lo que hace.</p>
 		</div>
-	</section>
-
+	</div>	
+</section>	
 <!--section id="nosotros">
 	<p class="about">NOSOTROS</p>
 	<ul>
@@ -75,19 +72,10 @@ layout: default
 	<p class="frase">El auténtico creador desdeña la técnica entendida como un fin y no como un medio.<br><span>Charles Chaplin</span>
 	</p>
 </section-->
-<div id="fixed3"></div>
-<footer>
-	<p class="contact">CONTÁCTANOS</p>
-
-	<div id="set-1">
-		<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
-			<a href="https://www.facebook.com/digitaldealers" class="hi-icon hi-icon-mobile">facebook</a>
-			<a href="https://twitter.com/bedealers" class="hi-icon hi-icon-screen">twitter</a>
-			<!--a href="" class="hi-icon hi-icon-earth">google+</a-->
-			<a href="https://github.com/ddealers" class="hi-icon hi-icon-support">github</a>
-		</div>
-	</div>
+<div id="fixed3">
+	<div id="map"></div>
 	<div class="row">
+		<p id="tit-cursos">Contáctanos</p>
 		<form class="form-horizontal" role="form" action="" method="post">
 			<div class="form-group">
 				<div class="col-sm-3 control-label">
@@ -125,10 +113,48 @@ layout: default
 	      			<button type="submit" class="btn btn-ttc">Send</button>
 	      		</div>
 			</div>
+			<nav class="cl-effect-5">
+				<p class="follow">Siguenos en:</p>
+				<a id="face" href="#"><span data-hover="Seraglio">facebook<img src="./imgs/facebook-1.png" class="iconf"></span></a>
+				<a id="twitter"href="#"><span data-hover="Sumptuous">twitter<img src="./imgs/twitter-1.png" class="icont"></span></a>
+				<a id="git"href="#"><span data-hover="Scintilla">github<img src="./imgs/github-1.png" class="icong"></span></a>
+			</nav>
 		</form>
 		<div id="address">
-			<div id="map"></div>
-			<p class="direccion">Venustiano Carranza 68A, Valle de Anáhuac</p>
+			<br>
+			<p class="direccion">Venustiano Carranza 68A, Valle de Anáhuac.</p>
+		</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container-footer">
+		<div class="column home">
+			<p class="title seccion">Home</p>
+			<ul>
+				<li><a href="#windowParallax">Home</a></li>
+				<li><a href="#">Cursos</a></li>
+				<li><a href="#">¿Quienes somos?</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="column courses">
+			<p class="title seccion">Cursos</p>
+			<ul>
+				<li><a href="">Digital</a></li>
+				<li><a href="">Artisan</a></li>
+				<li><a href="">Music</a></li>
+				<li><a href="">Robo</a></li>
+				<li><a href="">Travel</a></li>
+			</ul>
+		</div>
+		<div class="column social">
+			<p class="title seccion">Redes sociales</p>
+			<ul>
+				<li><a href="https://www.facebook.com/digitaldealers?fref=ts" target="blank">Facebook</a></li>
+				<li><a href="https://twitter.com/bedealers" target="blank">Twitter</a></li>
+				<li><a href="https://github.com/ddealers" target="blank">Github</a></li>
+			</ul>
 		</div>
 	</div>
 </footer>
