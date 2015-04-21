@@ -91,6 +91,7 @@ html{
 				font-family: "raleway";
 				@include media-query($x-small){
 					font-size: 54px;
+					top: 50%;
 				}
 				.thin {
 					font-weight: 200;
@@ -103,6 +104,20 @@ html{
 					}
 				}
 			}
+			.back-phone{
+  				display: none;
+  				@include media-query( $x-small){
+  					display: block;
+  					height: 100%;
+  					img{
+  						@include media-query( $x-small){
+  							width: 375px;
+  							overflow: hidden;
+  							height: 100%;
+  						}
+  					}
+  				}
+  			}
 			.parallax-viewport{
 				position: relative;
 				height: 100%;
@@ -110,10 +125,16 @@ html{
 				overflow:hidden;
 				box-shadow: 0px 10px 40px #000;
   				z-index: 1;
+  				@include media-query($x-small){
+  					display: none;
+  				}
 				.parallax-layer{
 					position: absolute;
 					width: 100%;
   					height: 100%;
+  					@include media-query( $x-small){
+  						display: none;
+  					}
 					&.img0{
 						img{
 							position: absolute;
@@ -200,6 +221,9 @@ html{
 					opacity: 1;
   					font-weight: 100;
   					width: 355px;
+  					@include media-query( $x-small){
+  						font-size: 38px;
+  					}
 				}
 				.frase{
 					text-align: center;
@@ -217,6 +241,9 @@ html{
 					font-family: raleway;
 					width: 600px;
   					top: 195px;
+  					@include media-query($x-small){
+  						width: 300px;
+  					}
 					span{
 						font-size: 20px;
 						font-style: italic;
@@ -236,45 +263,94 @@ html{
 					display: inline-flex;
 					-webkit-flex-flow: wrap;
 					justify-content: space-around;
+					@include media-query( $x-small){
+						padding-top: 110px;
+					}
 					.icono-curso{
 						width: 170px;
 					  	height: 230px;
+					  	@include media-query( $x-small){
+					  		position: relative;
+					  		margin: 10px 10px 0px;
+  							height: auto;
+					  	}
 					  	img{
 					  		width: 170px;
 					  		height: 170px;
+					  		margin: 10px 10px 0px;
+					  		@include media-query( $x-small){
+					  			width: 150px;
+					  			height: 150px;
+					  		}
 					  	}
 					  	.iconText{
 					  		color: #fff;
 					  		font-family: raleway;
 					  		font-size: 23px;
 					  		font-weight: 100;
+					  		@include media-query( $x-small){
+					  			position: relative;
+  								font-size: 16px;
+  								text-align: center;
+  								width: 100px;
+					  		}
 					  	}
 						#curso-digital{
 							position: relative;
 							font-size: 30px;
 							left: 41px;
 							text-shadow: 2px 1px 12px #000;
+							@include media-query( $x-small){
+								font-size: 20px;
+  								left: 0;
+  								right: 0;
+  								margin: auto;
+							}
 						}
 						#curso-artisan{
 							position: relative;
 							font-size: 30px;
 							left: 44px;
 							text-shadow: 2px 1px 12px #000;
+							@include media-query( $x-small){
+								font-size: 20px;
+  								left: 0;
+  								right: 0;
+  								margin: auto;
+							}
 						}
 						#curso-music{
 							position: relative;
 							font-size: 30px;
 							left: 44px;
+							@include media-query( $x-small){
+								font-size: 20px;
+  								left: 0;
+  								right: 0;
+  								margin: auto;
+							}
 						}
 						#curso-robo{
 							position: relative;
 							font-size: 30px;
 							left: 55px;
+							@include media-query( $x-small){
+								font-size: 20px;
+  								left: 0;
+  								right: 0;
+  								margin: auto;
+							}
 						}
 						#curso-travel{
 							position: relative;
 							font-size: 30px;
 							left: 45px;
+							@include media-query( $x-small){
+								font-size: 20px;
+  								left: 0;
+  								right: 0;
+  								margin: auto;
+							}
 						}
 					}	
 				}
@@ -283,6 +359,9 @@ html{
 				  	height: 900px;
 				  	margin-top: 100px;
 				  	background: rgba(10, 60, 42, 0.5) url(../imgs/pattern.png)repeat;
+				  	@include media-query( $x-small){
+				  		height: 1100px;
+				  	}
 				  	.somos{
 				  		position: absolute;
   						top: 210px;
@@ -292,12 +371,19 @@ html{
   						padding: 60px;
   						right: 0;
   						left: 0;
+  						@include media-query( $x-small){
+  							padding: 0px 30px;
+  							width: 300px;
+  						}
   						.parrafo{
   							font-family: raleway;
   							color: #fff;
   							line-height: 29px;
   							text-align: justify;
   							font-weight: 100;
+  							@include media-query( $x-small){
+  								text-align: left;
+  							}
   						}
 				  	}
 				}
@@ -310,6 +396,9 @@ html{
 		width: 100%;
 		height: 600px;
 		background-size: cover;
+		@include media-query( $x-small){
+			height: 1100px;
+		}
 		#map{
 			height: 245px;
   			position: absolute;
@@ -319,10 +408,18 @@ html{
   			margin: auto;
   			bottom: 100px;
   			border-radius: 10px;
+  			@include media-query( $x-small){
+  				right: 0;
+  				left: 0;
+  				width: 350px;
+  			}
 		}
 		.row{
   			background-color: rgba(0, 0, 0, 0.5);
   			height: 600px;
+  			@include media-query( $x-small){
+  				height: 1100px;
+  			}
   			#tit-cursos{
 				position: absolute;
 				font-size: 50px;
@@ -337,6 +434,9 @@ html{
 				opacity: 1;
 	  			font-weight: 100;
 	  			width: 355px;
+	  			@include media-query( $x-small){
+	  				font-size: 38px;
+	  			}
 			}
 			form.form-horizontal{
 				position: absolute;
@@ -346,6 +446,12 @@ html{
   				width: 400px;
   				height: 600px;
   				padding-top: 50px;
+  				@include media-query( $x-small){
+  					background-color: none;
+  					padding-top: 175px;
+  					width: 100%;
+  					height: 1100px;
+  				}
   				.form-group{
   					padding: 20px 50px 0px 50px;
   					p{
@@ -363,6 +469,9 @@ html{
   						font-size: 16px;
   						font-family: raleway;
   						padding-left: 10px;
+  						@include media-query( $x-small){
+  							width: 265px;
+  						}
   					}
   					textarea{
   						width: 295px;
@@ -371,6 +480,9 @@ html{
   						padding: 10px;
   						font-size: 16px;
   						font-family: raleway;
+  						@include media-query( $x-small){
+  							width: 255px;
+  						}
   					}
   					.btn.btn-ttc{
   						font-family: raleway;
@@ -424,6 +536,11 @@ html{
   				padding-bottom: 10px;
   				color: #fff;
   				font-weight: 100;
+  				@include media-query( $x-small){
+  					left: 0;
+  					right: 0;
+  					text-align: center;
+  				}
 				#map{
 					p.direccion{
 						padding-top: 15px;
@@ -437,8 +554,15 @@ html{
 		position: relative;
 		padding: 30px;
 		height: 300px;
+		@include media-query( $x-small){
+			padding: 25px 0px;
+			height: 800px;
+		}
 		.container-footer{
 			display: -webkit-inline-box;
+			@include media-query( $x-small){
+				display: block;
+			}
 			.column{
 				width: 300px;
 				margin: 50px;
@@ -452,6 +576,9 @@ html{
   					border-bottom: 5px solid #2c8a61;
   					padding: 10px;
   					color: #fff;
+  					@include media-query( $x-small){
+  						width: 250px;
+  					}
 				}
 				ul{
 					padding: 30px 0px 0px 70px;
