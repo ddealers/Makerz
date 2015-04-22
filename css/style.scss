@@ -413,6 +413,10 @@ html{
   				left: 0;
   				width: 350px;
   			}
+  			@include media-query( $medium){
+  				width: 500px;
+  				right: 6%;
+  			}
 		}
 		.row{
   			background-color: rgba(0, 0, 0, 0.5);
@@ -437,6 +441,11 @@ html{
 	  			@include media-query( $x-small){
 	  				font-size: 38px;
 	  			}
+	  			@include media-query( $medium){
+  					z-index: 1;
+  					top: 50px;
+  					left: 20%;
+  				}
 			}
 			form.form-horizontal{
 				position: absolute;
@@ -569,6 +578,9 @@ html{
 				color: #fff;
 				font-family: raleway;
 				height: 200px;
+				@include media-query( $medium){
+					width: 200px;
+				}
 				.title{
 					font-size: 18px;
   					font-weight: 100;
@@ -579,9 +591,15 @@ html{
   					@include media-query( $x-small){
   						width: 250px;
   					}
+  					@include media-query( $medium){
+  						width: 200px;
+  					}
 				}
 				ul{
 					padding: 30px 0px 0px 70px;
+					@include media-query( $medium){
+						padding: 30px 0px 0px 15px;
+					}
 					li{
 						color: #3a9e6b;
 						padding-bottom: 15px;
