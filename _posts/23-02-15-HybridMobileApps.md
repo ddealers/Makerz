@@ -4,7 +4,7 @@ title:  "Hybrid Mobile Apps"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "digital"
-photo: imgs/hybridapp.png
+img: imgs/digital-makerz.png
 ---
 Una aplicación híbrida es aquella que se escribe con la misma tecnología utilizada para los sitios web y las implementaciones de la web móvil, y que está instalado o se ejecuta dentro de un contenedor nativo en un dispositivo móvil. Es la unión de la tecnología web y la ejecución nativa.
 

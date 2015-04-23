@@ -4,7 +4,7 @@ title:  "Processing & NUI"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "digital"
-photo: imgs/processing.png
+img: imgs/digital-makerz.png
 ---
 
 Processing es un lenguaje de programación y entorno de desarrollo integrado de código abierto basado en Java, de fácil utilización, que sirve como medio para la enseñanza y producción de proyectos multimedia e interactivos de diseño digital.

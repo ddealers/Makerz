@@ -4,7 +4,7 @@ title:  "Web Design"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "digital"
-photo: imgs/disweb.png
+img: imgs/digital-makerz.png
 ---
 HTML5 no es una nueva versión del antiguo lenguaje de etiquetas, ni siquiera una mejora de esta ya antigua tecnología, sino
 un nuevo concepto para la construcción de sitios web y aplicaciones en una era que combina dispositivos móviles,

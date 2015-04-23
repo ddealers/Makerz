@@ -125,9 +125,6 @@ $(document).on('ready',
 			  	lat: 19.516458,
 			  	lng: -99.040744,
 			  	title: 'Makerz',
-			  	click: function(e) {
-			    alert('You clicked in this marker');
-			  	}
 			});
 	 	};
 	setInterval(function() {

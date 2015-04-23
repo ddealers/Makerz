@@ -3,7 +3,7 @@ layout: post
 title:  "artisan"
 subtitle: "makerz"
 date:   2015-02-14 02:30:16
-img: imgs/naranja.png
+img: imgs/artisan-makerz.png
 division: "artisan"
 photo: imgs/artisan.png
 ---

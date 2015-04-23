@@ -4,7 +4,7 @@ title:  "Diseño de personajes"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "design"
-photo: imgs/dispers.png
+img: imgs/design-makerz.png
 ---
 Es el proceso de diseñar, codificar, depurar y mantener el código fuente de programas computacionales. El código fuente es escrito en un lenguaje de programación. El propósito de la programación es crear programas que exhiban un comportamiento deseado. 
 

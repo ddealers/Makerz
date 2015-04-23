@@ -4,7 +4,7 @@ title:  "Modelado 3D"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "design"
-photo: imgs/modelado3d.png
+img: imgs/design-makerz.png
 ---
 El modelado en 3D es el proceso por el cual los modeladores de computadora crean personajes, objetos y escenas que los cineastas utilizan tanto para las películas de animación como para los efectos especiales.
 

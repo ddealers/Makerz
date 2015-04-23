@@ -93,6 +93,9 @@ html{
 					font-size: 54px;
 					top: 50%;
 				}
+				@include media-query($medium){
+					top: 50%;
+				}
 				.thin {
 					font-weight: 200;
 					color: #fff;
@@ -123,7 +126,6 @@ html{
 				height: 100%;
 				width: 100%;
 				overflow:hidden;
-				box-shadow: 0px 10px 40px #000;
   				z-index: 1;
   				@include media-query($x-small){
   					display: none;
@@ -144,6 +146,9 @@ html{
 							bottom: 0;
 							left: 50%;
 							margin-left: -60%;
+							@include media-query( $medium){
+  								width: 254%;
+							}
 						}
 					}
 					&.img1{
@@ -207,54 +212,12 @@ html{
 				background: url(../imgs/back-slide3.png) no-repeat fixed; 
 				background-size: cover;
 				position: relative;
-				#tit-cursos{
-					position: absolute;
-					font-size: 50px;
-					top: 100px;
-					left: 0;
-					font-family: raleway;
-					right: 0;
-					margin: auto;
-					text-align: center;
-					color: #fff;
-					text-shadow: 2px 1px 12px #000;
-					opacity: 1;
-  					font-weight: 100;
-  					width: 355px;
-  					@include media-query( $x-small){
-  						font-size: 38px;
-  					}
-				}
-				.frase{
-					text-align: center;
-					color: #fff;
-					font-size: 30px;
-					text-shadow: 2px 1px 12px #000;
-					position: absolute;
-					left: 0;
-					right: 0;
-					top: 165px;
-					line-height: 40px;
-					font-weight: lighter;
-					opacity: 1;
-					margin: auto;
-					font-family: raleway;
-					width: 600px;
-  					top: 195px;
-  					@include media-query($x-small){
-  						width: 300px;
-  					}
-					span{
-						font-size: 20px;
-						font-style: italic;
-					}
-				}	
+				height: 100%;
 				.flex-container{
 					width: 100%;
-					height: auto;
+					height: 1350px;
 					padding: 0;
 	  				margin: 0;
-	  				margin-top: 350px;
 					list-style: none;
 					display: -webkit-box;
 					display: -moz-box;
@@ -265,94 +228,198 @@ html{
 					justify-content: space-around;
 					@include media-query( $x-small){
 						padding-top: 110px;
+						height: 100%;
 					}
-					.icono-curso{
-						width: 170px;
-					  	height: 230px;
-					  	@include media-query( $x-small){
-					  		position: relative;
-					  		margin: 10px 10px 0px;
-  							height: auto;
-					  	}
-					  	img{
-					  		width: 170px;
-					  		height: 170px;
-					  		margin: 10px 10px 0px;
-					  		@include media-query( $x-small){
-					  			width: 150px;
-					  			height: 150px;
-					  		}
-					  	}
-					  	.iconText{
-					  		color: #fff;
-					  		font-family: raleway;
-					  		font-size: 23px;
-					  		font-weight: 100;
-					  		@include media-query( $x-small){
-					  			position: relative;
-  								font-size: 16px;
+					#tit-cursos{
+						position: absolute;
+						font-size: 50px;
+						top: 100px;
+						left: 0;
+						font-family: raleway;
+						right: 0;
+						margin: auto;
+						text-align: center;
+						color: #fff;
+						text-shadow: 2px 1px 12px #000;
+						opacity: 1;
+  						font-weight: 100;
+  						width: 355px;
+  						@include media-query( $x-small){
+  							font-size: 38px;
+  						}
+					}
+					.frase{
+						text-align: center;
+						color: #fff;
+						font-size: 30px;
+						text-shadow: 2px 1px 12px #000;
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 165px;
+						line-height: 40px;
+						font-weight: lighter;
+						opacity: 1;
+						margin: auto;
+						font-family: raleway;
+						width: 600px;
+  						top: 195px;
+  						@include media-query($x-small){
+  							width: 300px;
+  						}
+						span{
+							font-size: 20px;
+							font-style: italic;
+						}
+					}
+					.courses-parents{
+						padding-top: 375px;
+						display: -webkit-inline-box;
+						margin: auto;
+						width: 1000px;
+  						position: absolute;
+  						left: 0;
+  						right: 0;
+  						.icono-curso{
+							width: 170px;
+						  	height: 230px;
+						  	padding: 10px;
+						  	@include media-query( $medium){
+						  		width: 120px;
+						  	}
+						  	@include media-query( $x-small){
+						  		position: relative;
+						  		margin: auto;
+	  							height: auto;
+	  							width: 170px;
+						  	}
+						  	img{
+						  		width: 170px;
+						  		height: 170px;
+						  		margin: 10px 10px 0px;
+						  		@include media-query( $medium){
+						  			width: 130px;
+						  			height: 130px;
+						  		}
+						  		@include media-query( $x-small){
+						  			width: 150px;
+						  			height: 150px;
+						  		}
+						  	}
+						  	.iconText{
+						  		color: #fff;
+						  		font-family: raleway;
+						  		font-size: 23px;
+						  		font-weight: 100;
+						  		@include media-query( $x-small){
+						  			position: relative;
+	  								font-size: 16px;
+	  								text-align: center;
+	  								width: 100px;
+						  		}
+						  	}
+							#curso-digital{
+								position: relative;
+								font-size: 30px;
+								left: 41px;
+								text-shadow: 2px 1px 12px #000;
+								@include media-query( $x-small){
+									font-size: 20px;
+	  								left: 0;
+	  								right: 0;
+	  								margin: auto;
+								}
+							}
+							#curso-artisan{
+								position: relative;
+								font-size: 30px;
+								left: 44px;
+								text-shadow: 2px 1px 12px #000;
+								@include media-query( $x-small){
+									font-size: 20px;
+	  								left: 0;
+	  								right: 0;
+	  								margin: auto;
+								}
+							}
+							#curso-music{
+								position: relative;
+								font-size: 30px;
+								left: 44px;
+								@include media-query( $x-small){
+									font-size: 20px;
+	  								left: 0;
+	  								right: 0;
+	  								margin: auto;
+								}
+							}
+							#curso-robo{
+								position: relative;
+								font-size: 30px;
+								left: 55px;
+								@include media-query( $x-small){
+									font-size: 20px;
+	  								left: 0;
+	  								right: 0;
+	  								margin: auto;
+								}
+							}
+							#curso-travel{
+								position: relative;
+								font-size: 30px;
+								left: 45px;
+								@include media-query( $x-small){
+									font-size: 20px;
+	  								left: 0;
+	  								right: 0;
+	  								margin: auto;
+								}
+							}
+						}
+					}
+					.courses{
+						padding-top: 650px;
+						display: -webkit-inline-box;
+						margin: auto;
+						width: 1000px;
+  						position: absolute;
+  						left: 0;
+  						right: 0;
+  						@include media-query( $medium){
+  							position: relative;
+  							margin: auto;
+  							width: 750px;
+  						}
+						@include media-query( $x-small){
+							display: block;
+							margin: auto;
+							width: 100%;
+							position: relative;
+						}
+						ul{
+							width: 95%;
+	  						margin: auto;
+	  						text-shadow: 2px 1px 12px #000;
+	  						font-size: 20px;
+	  						li{
+	  							padding: 50px;
+	  							list-style: none;
+	  							width: 130px;
+	  							display: inline-block;
+	  							height: 100px;
+  								float: left;
   								text-align: center;
-  								width: 100px;
-					  		}
-					  	}
-						#curso-digital{
-							position: relative;
-							font-size: 30px;
-							left: 41px;
-							text-shadow: 2px 1px 12px #000;
-							@include media-query( $x-small){
-								font-size: 20px;
-  								left: 0;
-  								right: 0;
-  								margin: auto;
-							}
+	  							a{
+	  								color: #fff;
+	  								text-decoration: none;
+	  								font-family: raleway;
+	  								img{
+	  									width: 108px;
+	  								}
+	  							}
+	  						}
 						}
-						#curso-artisan{
-							position: relative;
-							font-size: 30px;
-							left: 44px;
-							text-shadow: 2px 1px 12px #000;
-							@include media-query( $x-small){
-								font-size: 20px;
-  								left: 0;
-  								right: 0;
-  								margin: auto;
-							}
-						}
-						#curso-music{
-							position: relative;
-							font-size: 30px;
-							left: 44px;
-							@include media-query( $x-small){
-								font-size: 20px;
-  								left: 0;
-  								right: 0;
-  								margin: auto;
-							}
-						}
-						#curso-robo{
-							position: relative;
-							font-size: 30px;
-							left: 55px;
-							@include media-query( $x-small){
-								font-size: 20px;
-  								left: 0;
-  								right: 0;
-  								margin: auto;
-							}
-						}
-						#curso-travel{
-							position: relative;
-							font-size: 30px;
-							left: 45px;
-							@include media-query( $x-small){
-								font-size: 20px;
-  								left: 0;
-  								right: 0;
-  								margin: auto;
-							}
-						}
-					}	
+					}
 				}
 				.title-parrafo {
 				  	position: relative;
@@ -362,10 +429,28 @@ html{
 				  	@include media-query( $x-small){
 				  		height: 1100px;
 				  	}
+				  	#tit-cursos{
+						position: absolute;
+						font-size: 50px;
+						top: 100px;
+						left: 0;
+						font-family: raleway;
+						right: 0;
+						margin: auto;
+						text-align: center;
+						color: #fff;
+						text-shadow: 2px 1px 12px #000;
+						opacity: 1;
+  						font-weight: 100;
+  						width: 355px;
+  						@include media-query( $x-small){
+  							font-size: 38px;
+  						}
+					}
 				  	.somos{
 				  		position: absolute;
   						top: 210px;
-  						width: 780px;
+  						width: 70%;
   						margin: auto;
   						border-radius: 15px;
   						padding: 60px;
@@ -394,7 +479,6 @@ html{
 		background: url(../imgs/avatar.jpg) no-repeat fixed;
 		position: relative;
 		width: 100%;
-		height: 600px;
 		background-size: cover;
 		@include media-query( $x-small){
 			height: 1100px;
@@ -404,18 +488,25 @@ html{
   			position: absolute;
   			z-index: 1;
   			width: 600px;
+  			height: 315px;
   			right: 8%;
   			margin: auto;
   			bottom: 100px;
   			border-radius: 10px;
+  			@include media-query( $medium){
+  				width: 40%;
+  				right: 10%;
+  				height: 350px;
+  			}
+  			@include media-query( $small){
+  				right: 4%;
+  			}
   			@include media-query( $x-small){
   				right: 0;
   				left: 0;
   				width: 350px;
-  			}
-  			@include media-query( $medium){
-  				width: 500px;
-  				right: 6%;
+  				margin: auto;
+  				height: 260px;
   			}
 		}
 		.row{
@@ -438,14 +529,18 @@ html{
 				opacity: 1;
 	  			font-weight: 100;
 	  			width: 355px;
-	  			@include media-query( $x-small){
-	  				font-size: 38px;
-	  			}
 	  			@include media-query( $medium){
   					z-index: 1;
   					top: 50px;
   					left: 20%;
   				}
+  				@include media-query( $small){
+  					left: 50%;
+  				}
+	  			@include media-query( $x-small){
+	  				font-size: 38px;
+	  				left: 0;
+	  			}
 			}
 			form.form-horizontal{
 				position: absolute;
@@ -545,16 +640,17 @@ html{
   				padding-bottom: 10px;
   				color: #fff;
   				font-weight: 100;
+  				@include media-query( $medium){
+  					right: 150px;
+  				}
+  				@include media-query( $small){
+  					right: 25px;
+  				}
   				@include media-query( $x-small){
   					left: 0;
   					right: 0;
   					text-align: center;
   				}
-				#map{
-					p.direccion{
-						padding-top: 15px;
-					}
-				}
 			}
 		}
 	}
@@ -569,22 +665,37 @@ html{
 		}
 		.container-footer{
 			display: -webkit-inline-box;
+			width: 80%;
+  			position: absolute;
+  			margin: auto;
+  			left: 0;
+  			right: 0;
 			@include media-query( $x-small){
 				display: block;
 			}
 			.column{
 				width: 300px;
-				margin: 50px;
+				margin: 25px;
 				color: #fff;
 				font-family: raleway;
 				height: 200px;
+				&.courses{
+					@include media-query( $medium){
+						margin: 10px 10px 50px 10px;
+					}
+				}
 				@include media-query( $medium){
+					width: 280px;
+					margin: 10px;
+				}
+				@include media-query( $small){
 					width: 200px;
+					margin: 10px;
 				}
 				.title{
 					font-size: 18px;
   					font-weight: 100;
-  					width: 300px;
+  					width: 230px;
   					border-bottom: 5px solid #2c8a61;
   					padding: 10px;
   					color: #fff;
@@ -592,7 +703,7 @@ html{
   						width: 250px;
   					}
   					@include media-query( $medium){
-  						width: 200px;
+  						width: 150px;
   					}
 				}
 				ul{

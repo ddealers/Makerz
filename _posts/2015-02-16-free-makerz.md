@@ -3,7 +3,7 @@ layout: post
 title:  "free"
 subtitle: "makerz"
 date:   2015-02-16 02:30:16
-img: imgs/music.png
+img: imgs/free-makerz.png
 division: "free"
 photo: imgs/free.png
 ---

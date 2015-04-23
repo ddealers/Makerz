@@ -4,7 +4,7 @@ title:  "Laravel PHP"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "digital"
-photo: imgs/laravel.png
+img: imgs/digital-makerz.png
 ---
 Laravel es un framework de código abierto para desarrollar aplicaciones y servicios web con PHP 5. Su filosofía es desarrollar código PHP de forma elegante y simple, evitando el "código espagueti". Fue creado en 2011 y tiene una gran influencia de frameworks como Ruby on Rails, Sinatra y ASP.NET MVC.
 

@@ -3,7 +3,7 @@ layout: post
 title:  "kids"
 subtitle: "makerz"
 date:   2015-02-13 02:30:16
-img: imgs/verde.png
+img: imgs/robo-makerz.png
 division: "kids"
 photo: imgs/kids.png
 ---
