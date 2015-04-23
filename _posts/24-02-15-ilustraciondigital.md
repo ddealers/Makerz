@@ -4,7 +4,7 @@ title:  "Retoque e Ilustración Digital"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "design"
-img: imgs/design-makerz.png
+img: imgs/ps.png
 ---
 Es una técnica que permite obtener otra imagen modificada, ya sea para lograr una mejor calidad o más realismo, o para obtener una composición totalmente diferente que distorsione la realidad. 
 

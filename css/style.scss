@@ -311,6 +311,7 @@ html{
 						  		font-family: raleway;
 						  		font-size: 23px;
 						  		font-weight: 100;
+						  		text-shadow: 2px 1px 12px #000;
 						  		@include media-query( $x-small){
 						  			position: relative;
 	  								font-size: 16px;
@@ -346,6 +347,7 @@ html{
 								position: relative;
 								font-size: 30px;
 								left: 44px;
+								text-shadow: 2px 1px 12px #000;
 								@include media-query( $x-small){
 									font-size: 20px;
 	  								left: 0;
@@ -357,6 +359,7 @@ html{
 								position: relative;
 								font-size: 30px;
 								left: 55px;
+								text-shadow: 2px 1px 12px #000;
 								@include media-query( $x-small){
 									font-size: 20px;
 	  								left: 0;
@@ -368,23 +371,29 @@ html{
 								position: relative;
 								font-size: 30px;
 								left: 45px;
+								text-shadow: 2px 1px 12px #000;
 								@include media-query( $x-small){
 									font-size: 20px;
 	  								left: 0;
 	  								right: 0;
 	  								margin: auto;
+
 								}
 							}
 						}
 					}
 					.courses{
-						padding-top: 650px;
 						display: -webkit-inline-box;
 						margin: auto;
 						width: 1000px;
   						position: absolute;
   						left: 0;
   						right: 0;
+  						background-color: rgba(0, 0, 0, 0.5);
+  						top: 400px;
+  						padding-bottom: 100px;
+  						box-shadow: 10px 10px 26px;
+  						border-radius: 30px;
   						@include media-query( $medium){
   							position: relative;
   							margin: auto;
@@ -413,6 +422,7 @@ html{
 	  								color: #fff;
 	  								text-decoration: none;
 	  								font-family: raleway;
+	  								font-weight: 100;
 	  								img{
 	  									width: 108px;
 	  								}
@@ -424,7 +434,7 @@ html{
 				.title-parrafo {
 				  	position: relative;
 				  	height: 900px;
-				  	margin-top: 100px;
+				  	margin-top: 250px;
 				  	background: rgba(10, 60, 42, 0.5) url(../imgs/pattern.png)repeat;
 				  	@include media-query( $x-small){
 				  		height: 1100px;
