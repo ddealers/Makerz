@@ -911,6 +911,33 @@ html{
 			}
 		}	
 		/*----------------------------------------------------*/
+		&.ios{
+			.post-header{
+				h1{
+					color: #7eadbf;
+				}
+			}
+			.post-content{
+				h2{
+					color: #7eadbf;
+				}
+				h3{
+					color: #7eadbf;
+				}
+				img{
+				border: 3px solid #7eadbf;
+				}
+				a{
+					border: 1px solid #7eadbf;
+					color: #fff;
+					background: #7eadbf;
+				}
+				a:hover{
+					background: #7199a8;
+				}
+			}
+		}	
+		/*----------------------------------------------------*/
 		&.programacion{
 			.post-header{
 				h1{
