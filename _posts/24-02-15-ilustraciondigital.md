@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Retoque e Ilustración Digital"
+title:  "Retoque de Ilustración Digital"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "digital"
