@@ -3,7 +3,7 @@ layout: post
 title:  "Programación de Casual Games"
 subtitle:
 date:   2015-02-28 02:30:16
-division: "digital"
+division: "games"
 img: /imgs/unity.png
 photo: /imgs/gamer.jpg
 ---

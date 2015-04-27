@@ -965,6 +965,33 @@ html{
 			}
 		}
 		/*----------------------------------------------------*/
+		&.games{
+			.post-header{
+				h1{
+					color: #BCBFB8;
+				}
+			}
+			.post-content{
+				h2{
+					color: #BCBFB8;
+				}
+				h3{
+					color: #BCBFB8;
+				}
+				img{
+				border: 3px solid #BCBFB8;
+				}
+				a{
+					border: 1px solid #BCBFB8;
+					color: #fff;
+					background: #BCBFB8;
+				}
+				a:hover{
+					background: #838580;
+				}
+			}
+		}
+		/*----------------------------------------------------*/
 		&.digital{
 			.post-content{
 				a{
