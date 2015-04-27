@@ -4,7 +4,8 @@ title:  "Programación de Casual Games"
 subtitle:
 date:   2015-02-28 02:30:16
 division: "digital"
-img: imgs/digital-makerz.png
+img: /imgs/digital-makerz.png
+photo: /imgs/gamer.jpg
 ---
 Los videojuegos casuales pueden tener cualquier tipo de mecánica de juego, y ser clasificados dentro de cualquier otro género. Son típicamente distinguibles por sus reglas simples y que no requieren excesivo compromiso en contraste con la mayoría de juegos, más complejos.1 No requieren dedicación de tiempo a largo plazo o habilidades especiales para jugar y, comparativamente, los costes de distribución y de producción son más bajos para el productor.
 
@@ -18,7 +19,7 @@ Costo: **$3,600**
 
 *Horario y días a elegir(Lunes a Viernes entre 7am y 7pm)*
 
-## Temario
+### Temario
 - Introducción a Android
 - Disposición basada en XML
 - Widgets básicos

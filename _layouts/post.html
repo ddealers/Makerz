@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post {{page.division}}">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  	<img src="{{page.img}}">
+    <h1 class="post-title">{{ page.title }}<br><span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span></h1>
   </header>
 
   <article class="post-content">
     {{ content }}
+    <img src="{{page.photo}}">
+    <a href="/#contact">Inscribete</a>
   </article>
 
 </div>

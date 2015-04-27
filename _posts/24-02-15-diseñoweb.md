@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Web Design"
+title:  "Desarrollo Web"
 subtitle:
 date:   2015-02-28 02:30:16
-division: "digital"
-img: imgs/digital-makerz.png
+division: "web"
+img: /imgs/html5.png
+photo: /imgs/disweb.png
 ---
 HTML5 no es una nueva versión del antiguo lenguaje de etiquetas, ni siquiera una mejora de esta ya antigua tecnología, sino
 un nuevo concepto para la construcción de sitios web y aplicaciones en una era que combina dispositivos móviles,
@@ -18,7 +19,7 @@ Costo: **$3,000**
 
 *Horario y días a elegir(Lunes a Viernes entre 7am y 7pm)*
 
-## Temario
+### Temario
 - Introducción a Android
 - Disposición basada en XML(Manifiesto)
 - Interfaz de usuario, recursos y fuentes

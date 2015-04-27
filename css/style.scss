@@ -112,9 +112,10 @@ html{
   				@include media-query( $x-small){
   					display: block;
   					height: 100%;
+  					width: 100%;
   					img{
   						@include media-query( $x-small){
-  							width: 375px;
+  							width: 100%;
   							overflow: hidden;
   							height: 100%;
   						}
@@ -215,7 +216,7 @@ html{
 				height: 100%;
 				.flex-container{
 					width: 100%;
-					height: 1350px;
+					height: 750px;
 					padding: 0;
 	  				margin: 0;
 					list-style: none;
@@ -226,6 +227,9 @@ html{
 					display: inline-flex;
 					-webkit-flex-flow: wrap;
 					justify-content: space-around;
+					@include media-query( $small){
+						height: 950px;
+					}
 					@include media-query( $x-small){
 						padding-top: 110px;
 						height: 100%;
@@ -391,19 +395,24 @@ html{
   						right: 0;
   						background-color: rgba(0, 0, 0, 0.5);
   						top: 400px;
-  						padding-bottom: 100px;
+  						padding-bottom: 300px;
   						box-shadow: 10px 10px 26px;
   						border-radius: 30px;
   						@include media-query( $medium){
   							position: relative;
   							margin: auto;
-  							width: 750px;
+  							width: 975px;
+  						}
+  						@include media-query( $small){
+  							border-radius: 0;
   						}
 						@include media-query( $x-small){
 							display: block;
 							margin: auto;
 							width: 100%;
 							position: relative;
+							box-shadow: none;
+							padding-bottom: 390px;
 						}
 						ul{
 							width: 95%;
@@ -418,6 +427,9 @@ html{
 	  							height: 100px;
   								float: left;
   								text-align: center;
+  								@include media-query( $x-small){
+  									padding: 60px 20px;
+  								}
 	  							a{
 	  								color: #fff;
 	  								text-decoration: none;
@@ -429,15 +441,79 @@ html{
 	  							}
 	  						}
 						}
+						.sugerencias{
+							position: absolute;
+  							bottom: -15px;
+  							left: 0;
+  							padding: 50px;
+  							border-top: 1px solid #6A6A6A;
+  							width: 600px;
+  							margin: auto;
+  							right: 0;
+  							@include media-query( $x-small){
+  								width: auto;
+  								border-top: none;
+  								bottom: 0;	
+  							}
+  							p{
+  								color: #fff;
+  								text-decoration: none;
+  								font-family: raleway;
+  								font-weight: 100;
+  								letter-spacing: 1px;
+  								width: 300px;
+  								line-height: 30px;
+  								float: left;
+  								@include media-query( $x-small){
+  									color: #fff;
+  									text-decoration: none;
+  									font-family: raleway;
+  									font-weight: 100;
+  									letter-spacing: 1px;
+  									width: 300px;
+  									line-height: 30px;
+  									float: left;
+  								}
+  							}
+  							input{
+  								width: 270px;
+  								height: 30px;
+  								font-size: 16px;
+  								font-weight: 400;
+  								border-radius: 5px;
+  								outline: 0;
+  								border: none;
+  								border-bottom: 1px solid #fff;
+  								padding: 0px 10px;
+  								font-family: raleway
+  							}
+  							button{
+  								font-family: raleway;
+  								font-size: 16px;
+  								padding: 10px;
+  								width: 100px;
+  								background: #2c8a61;
+  								border-radius: 5px;
+  								border: none;
+  								outline: 0;
+  								color: #fff;
+  								font-weight: 100;
+  								margin-top: 20px
+  							}
+  							button:hover{
+  								background: #226B4B;
+  							}
+						}
 					}
 				}
 				.title-parrafo {
 				  	position: relative;
 				  	height: 900px;
-				  	margin-top: 250px;
+				  	margin-top: 450px;
 				  	background: rgba(10, 60, 42, 0.5) url(../imgs/pattern.png)repeat;
 				  	@include media-query( $x-small){
 				  		height: 1100px;
+				  		margin-top: 400px;
 				  	}
 				  	#tit-cursos{
 						position: absolute;
@@ -742,54 +818,317 @@ html{
 	}
 	/*POST----------------------------------------*/
 	div.post{
-		background:#212121 url(../imgs/verde2.png) no-repeat 50px 10px;
-		color: #fff;
-		background-size: 13%;
-		position: relative;
-		padding: 40px;
+		background: url(../imgs/back-slide.png) no-repeat;
+  		color: #fff;
+  		position: relative;
+  		height: 100%;
+  		background-size: cover;
 		@include media-query( $x-small){
-			background: #212121 url(../imgs/verde2.png) no-repeat 125px 10px;
-			background-size: 30%;
+			background: url(../imgs/back-slide.png) no-repeat;;
 		}
-	}	
-	header.post-header{
-		border-bottom: 2px solid #02958b;
-		width: 900px;
-		margin-left: 250px;
-		padding: 15px;
-		@include media-query( $medium){
-			margin-left: 150px;
-			width: 70%;
+		@include media-query( $small){
+			background-size: cover;
 		}
-		@include media-query( $x-small){
-			margin: 200px 0px 0px;
-			width: 90%;
+		/*----------------------------------------------------*/
+		&.web{
+			.post-header{
+				h1{
+					color: #da4f2f;
+				}
+			}
+			.post-content{
+				h2{
+					color: #da4f2f;
+				}
+				h3{
+					color: #da4f2f;
+				}
+				img{
+				border: 3px solid #da4f2f;
+				}
+				a{
+					border: 1px solid #da4f2f;
+					color: #fff;
+					background: #da4f2f;
+				}
+				a:hover{
+					background: #85301D;
+				}
+			}
 		}
-		h1.post-title{
-			color: #02958b;
+		/*----------------------------------------------------*/
+		&.angular{
+			.post-header{
+				h1{
+					color: #da4f2f;
+				}
+			}
+			.post-content{
+				h2{
+					color: #da4f2f;
+				}
+				h3{
+					color: #da4f2f;
+				}
+				img{
+				border: 3px solid #da4f2f;
+				}
+				a{
+					border: 1px solid #da4f2f;
+					color: #fff;
+					background: #da4f2f;
+				}
+				a:hover{
+					background: #85301D;
+				}
+			}
 		}
-		p.post-meta{
-			opacity: .5;
+		/*----------------------------------------------------*/
+		&.android{
+			.post-header{
+				h1{
+					color: #9acf00;
+				}
+			}
+			.post-content{
+				h2{
+					color: #9acf00;
+				}
+				h3{
+					color: #9acf00;
+				}
+				img{
+				border: 3px solid #9acf00;
+				}
+				a{
+					border: 1px solid #9acf00;
+					color: #fff;
+					background: #9acf00;
+				}
+				a:hover{
+					background: #5F7F00;
+				}
+			}
+		}	
+		/*----------------------------------------------------*/
+		&.programacion{
+			.post-header{
+				h1{
+					color: #00736b;
+				}
+			}
+			.post-content{
+				h2{
+					color: #00736b;
+				}
+				h3{
+					color: #00736b;
+				}
+				img{
+				border: 3px solid #00736b;
+				}
+				a{
+					border: 1px solid #00736b;
+					color: #fff;
+					background: #00736b;
+				}
+				a:hover{
+					background: #00665F;
+				}
+			}
+		}
+		/*----------------------------------------------------*/
+		&.digital{
+			.post-content{
+				a{
+					border: 1px solid #2E8CBF;
+					color: #fff;
+					background: #2E8CBF;
+				}
+				a:hover{
+					background: #247099;
+				}
+			}
+		}
+		/*----------------------------------------------------*/
+		&.modelado{
+			.post-content{
+				a{
+					border: 1px solid #2C86B8;
+					color: #fff;
+					background: #2C86B8;
+				}
+				a:hover{
+					background: #247099;
+				}
+			}
+		}
+		header.post-header{
+			padding: 50px;
+			height: 40px;
+			@include media-query( $medium){
+				margin-left: 150px;
+				width: 70%;
+			}
+			@include media-query( $x-small){
+				margin: 0px;
+				width: 90%;
+				padding-top: 100px;
+			}
+			img{
+				width: 100px;
+  				margin: -35px 0px 0px 25px;
+  				@include media-query( $medium){
+  					margin: -35px 0px 0px -80px;
+  				}
+  				@include media-query( $x-small){
+  					margin: -35px 0px 0px -35px;
+  				}
+			}
+			h1{
+				position: absolute;
+	  			font-size: 35px;
+	  			top: 35px;
+	  			left: 190px;
+	  			font-family: raleway;
+	  			color: #fff;
+	  			text-shadow: 2px 1px 12px #000;
+	  			opacity: 1;
+	  			font-weight: 100;
+	  			color: #a4cffc;
+	  			@include media-query( $medium){
+	  				left: 250px;
+	  			}
+	  			@include media-query( $x-small){
+	  				left: 33%;
+	  				top: 6%;
+	  				text-align: left;
+	  			}
+	  			span{
+	  				font-family: raleway;
+  					font-size: 16px;
+  					color: #ddd;
+	  			}
+	  		}
+		}
+		article.post-content {
+			background-color: rgba(0, 0, 0, 0.5);
+  			width: 80%;
+  			line-height: 27px;
+  			padding: 100px 50px 50px;
+  			margin: auto;
+  			border-radius: 10px;
+  			margin-bottom: 50px;
+			@include media-query( $medium){
+				width: 70%;
+			}
+			@include media-query( $x-small){
+				width: 75%;
+				padding: 50px 30px 50px;
+				margin-top: 70px;
+			}
+			p{
+				width: 400px;
+				font-weight: 100;
+				padding-bottom: 10px;
+				font-family: raleway;
+				@include media-query( $medium){
+					width: 380px;
+				}
+				@include media-query( $small){
+					width: 250px;
+				}
+				strong{
+					font-weight: 100;
+				}
+			}
+			h2{
+				font-weight: 100;
+				font-family: raleway;
+  				color: #a4cffc;
+  				margin-top: 20px;
+			}
+			h3{
+				font-weight: 100;
+				font-family: raleway;
+  				color: #a4cffc;
+  				position: absolute;
+  				right: 0px;
+  				top: 25%;
+  				width: 400px;
+  				font-size: 25px;
+  				@include media-query( $small){
+  					right: 110px;
+  					width: 250px;
+  				}
+  				@include media-query( $x-small){
+  					position: relative;
+  					padding: 0px;
+  					width: 250px;
+  					right: 0;
+  					margin-top: 20px;
+  				}
+			}
+			ul{
+				position: absolute;
+  				right: 25px;
+  				top: 30%;
+  				@include media-query( $medium){
+  					right: 0px;
+  				}
+  				@include media-query( $small){
+  					right: 110px;
+  					top: 30%;
+  					width: 250px;
+  				}
+  				@include media-query( $x-small){
+  					position: relative;
+  					padding: 0px;
+  					width: 250px;
+  					right: 0px;
+  				}
+				li{
+					width: 400px;
+  					font-weight: 100;
+  					padding-bottom: 10px;
+  					font-family: raleway;
+				}
+			}
+			img{
+				margin-top: 20px;
+				width: 375px;
+  				border: 3px solid #a4cffc;
+  				@include media-query( $small){
+  					width: 250px;
+  					margin: auto;
+  					margin-top: 30px;
+  					display: block;
+  				}
+			}
+			a{
+				width: 100px;
+  				font-size: 16px;
+  				padding: 10px;
+  				border-radius: 5px;
+  				background: none;
+  				margin-top: 50px;
+  				outline: 0;
+  				text-decoration: none;
+  				font-family: raleway;
+  				display: block;
+  				text-align: center;
+  				@include media-query( $x-small){
+  					width: 200px;
+  					margin: 30px;
+  					font-size: 20px;
+  					font-weight: 300;
+  					margin: auto;
+  					margin-top: 50px;
+  				}
+			}
+			a:hover{
+				background: #7FBDFC;
+			}
 		}
 	}
-	article.post-content {
-		margin-left: 250px;
-		width: 900px;
-		line-height: 27px;
-		padding: 20px;
-		@include media-query( $medium){
-			margin-left: 150px;
-			width: 70%;
-		}
-		@include media-query( $x-small){
-			margin-left: 0px;
-			width: 85%;
-		}
-	}
-	h2#detalles {
-		padding: 30px 0px 5px;
-	}
-	h2#temario{
-		padding: 30px 0px 5px;
-	}	
 }		
