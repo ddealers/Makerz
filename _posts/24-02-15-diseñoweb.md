@@ -6,6 +6,7 @@ date:   2015-02-28 02:30:16
 division: "web"
 img: /imgs/html5.png
 photo: /imgs/disweb.png
+back: /imgs/web.png
 ---
 HTML5 no es una nueva versión del antiguo lenguaje de etiquetas, ni siquiera una mejora de esta ya antigua tecnología, sino
 un nuevo concepto para la construcción de sitios web y aplicaciones en una era que combina dispositivos móviles,

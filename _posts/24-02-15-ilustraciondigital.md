@@ -6,6 +6,7 @@ date:   2015-02-28 02:30:16
 division: "digital"
 img: /imgs/ps.png
 photo: /imgs/retoquedig.png
+back: /imgs/fondo-digital.png
 ---
 Es una técnica que permite obtener otra imagen modificada, ya sea para lograr una mejor calidad o más realismo, o para obtener una composición totalmente diferente que distorsione la realidad. 
 

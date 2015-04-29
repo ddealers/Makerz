@@ -77,7 +77,7 @@ html{
 				padding: 0;
 				color: #ea6c13;
 				text-align: center;
-				top: 33%;
+				top: 45%;
 				z-index: 2;
 				left: 50%;
 				-webkit-transform: translate3d(-50%,-50%,0);
@@ -121,6 +121,26 @@ html{
   						}
   					}
   				}
+  			}
+  			.back-post{
+  				height: 100%;
+  				background-size: cover;
+  				min-height: 100%;
+  				min-width: 1024px;
+  				width: 100%;
+  				height: auto;	
+  				position: fixed;
+  				top: 0;
+  				left: 0;
+  				@include media-query($medium){
+  					left: 50%;
+    				margin-left: -512px;
+  				}
+  			}
+  			.modelado{
+  				background: url(/imgs/fondo-3d.png) no-repeat;
+  				height: 100%;
+ 				background-size: cover;
   			}
 			.parallax-viewport{
 				position: relative;

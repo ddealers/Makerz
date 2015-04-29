@@ -3,6 +3,10 @@
     <div class="back-phone">
         <img src="/imgs/back-phone.png">
     </div>
+    {% if page.layout %}
+    <div class="back-post" style="background:url({{ page.back }}) fixed; background-size: cover">
+    </div>
+    {% else %}
     <div id="parallax" class="parallax-viewport">
     	<div class="parallax-layer img0"><img src="/imgs/PARALLAX/fondo-parallax.png"></div>
         <div class="parallax-layer img1"><img src="/imgs/PARALLAX/part1.png"></div>
@@ -12,4 +16,5 @@
         <div class="parallax-layer img5"><img src="/imgs/PARALLAX/part5.png"></div>
         <div class="parallax-layer img6"><img src="/imgs/PARALLAX/part6.png"></div>
     </div>
+    {% endif %}
 </div>
