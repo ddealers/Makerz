@@ -110,6 +110,10 @@ html{
 					position: relative;
 					width: 60%;
   					top: 45px;	
+  					@include media-query($x-small){
+  						width: 100%;
+  						top: 10px;
+  					}	
 				}
 			}
 			.back-phone{
