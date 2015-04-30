@@ -3,8 +3,9 @@
     <div class="back-phone">
         <img src="/imgs/back-phone.png">
     </div>
-    {% if page.is_post %}
-    <div class="back-post" style="background:url({{ page.back }}) fixed; background-size: cover"></div>
+    {% if page.layout %}
+    <div class="back-post" style="background:url({{ page.back }}) fixed center center; background-size: cover">
+    </div>
     {% else %}
     <div id="parallax" class="parallax-viewport">
     	<div class="parallax-layer img0"><img src="/imgs/PARALLAX/fondo-parallax.png"></div>
