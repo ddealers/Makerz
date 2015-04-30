@@ -141,6 +141,7 @@ html{
   				position: fixed;
   				top: 0;
   				left: 0;
+  				overflow: hidden;
   				@include media-query($medium){
   					left: 50%;
     				margin-left: -512px;
@@ -237,6 +238,7 @@ html{
 		}
 	}
 	.page-content{
+		overflow: hidden;
 		.wrapper{
 			#cursos{
 				background: url(../imgs/back-slide3.png) no-repeat fixed; 
@@ -1095,130 +1097,141 @@ html{
 	  		}
 		}
 		article.post-content {
+  			height: 100%;
+			display: -webkit-box;
+  			display: -moz-box;
+  			display: -ms-flexbox;
+  			display: -webkit-flex;
+  			display: flex;
+  			-webkit-flex-flow: row wrap;
+  			flex-flow: row wrap;
+			font-weight: bold;
 			background-color: rgba(0, 0, 0, 0.5);
-  			width: 80%;
-  			line-height: 27px;
-  			padding: 100px 50px 50px;
-  			margin: auto;
+  			margin: 0 50px 50px;
+  			padding: 50px;
   			border-radius: 10px;
-  			margin-bottom: 50px;
-			@include media-query( $medium){
-				width: 70%;
+			.aside-1 { flex: 3 0px; }
+			.aside-1 { order: 1; } 
+			.main 	 { order: 2; }
+			.aside-2 { order: 3; }
+			.img-course  { order: 4; }
+			@include media-query( $small){
+				padding: 50px 10px;
+  				flex: 1 100%;
+  				margin-bottom: 100px;
+  				.aside{ 
+  					flex: 3 auto;
+  				} 	
 			}
 			@include media-query( $x-small){
-				width: 75%;
-				padding: 50px 30px 50px;
-				margin-top: 70px;
+  				padding: 20px;
+  				flex: 1 100%;
+  				margin: 15px; 
 			}
-			p{
-				width: 400px;
-				font-weight: 100;
-				padding-bottom: 10px;
-				font-family: raleway;
-				@include media-query( $medium){
-					width: 380px;
-				}
-				@include media-query( $small){
-					width: 250px;
-				}
-				strong{
-					font-weight: 100;
-				}
-			}
-			h2{
-				font-weight: 100;
-				font-family: raleway;
-  				color: #a4cffc;
-  				margin-top: 20px;
-			}
-			h3{
-				font-weight: 100;
-				font-family: raleway;
-  				color: #a4cffc;
-  				position: absolute;
-  				right: 0px;
-  				top: 19%;
-  				width: 400px;
-  				font-size: 25px;
-  				@include media-query( $medium){
-  					top: 19%;
-  				}
-  				@include media-query( $small){
-  					right: 110px;
-  					width: 250px;
-  					top: 15%;
-  				}
-  				@include media-query( $x-small){
-  					position: relative;
-  					padding: 0px;
-  					width: 250px;
-  					right: 0;
-  					margin-top: 20px;
-  				}
-			}
-			ul{
-				position: absolute;
-  				right: 25px;
-  				top: 23%;
-  				@include media-query( $medium){
-  					right: 0px;
-  					top: 23%;
-  				}
-  				@include media-query( $small){
-  					right: 110px;
-  					top: 19%;
-  					width: 250px;
-  				}
-  				@include media-query( $x-small){
-  					position: relative;
-  					padding: 0px;
-  					width: 250px;
-  					right: 0px;
-  				}
-				li{
-					width: 400px;
-  					font-weight: 100;
-  					padding-bottom: 10px;
-  					font-family: raleway;
-				}
-			}
-			img{
-				margin-top: 20px;
-				width: 375px;
-  				border: 3px solid #a4cffc;
-  				@include media-query( $small){
-  					width: 450px;
-  					margin: auto;
-  					margin-top: 30px;
-  					display: block;
-  				}
-  				@include media-query( $small){
-  					width: 250px;
-  				}
-			}
-			a{
-				width: 100px;
-  				font-size: 16px;
-  				padding: 10px;
-  				border-radius: 5px;
-  				background: none;
-  				margin-top: 50px;
-  				outline: 0;
-  				text-decoration: none;
+			.aside-1{
+  				width: 37%;
+  				line-height: 25px;
   				font-family: raleway;
-  				display: block;
-  				text-align: center;
+  				font-weight: 100;
+  				text-align: justify;
+  				padding: 10px 30px;
   				@include media-query( $x-small){
-  					width: 200px;
-  					margin: 30px;
-  					font-size: 20px;
-  					font-weight: 300;
-  					margin: auto;
-  					margin-top: 50px;
+  					width: 100%;
+  					text-align: left;
   				}
 			}
-			a:hover{
-				background: #7FBDFC;
+			.main{
+  				width: 25%;
+  				padding: 10px 30px;
+  				line-height: 25px;
+  				font-family: raleway;
+  				font-weight: 100;
+  				@include media-query( $small){
+  					width: 50%;
+  					order: 3;
+  					padding: 10px 20px;
+  				}
+  				@include media-query( $x-small){
+  					width: 100%;
+  				}
+  				h2{
+  					font-family: raleway;
+  					font-size: 25px;
+  					font-weight: 100;
+  					margin-bottom: 20px; 
+  				}
+  				ul{
+  					li{
+  						list-style: none;
+  					}
+  				}
+			}
+			.aside-2{
+  				width: 26%;
+  				line-height: 25px;
+  				font-family: raleway;
+  				font-weight: 100;
+  				@include media-query( $small){
+  					order: 2;
+  				}
+  				@include media-query( $x-small){
+  					width: 100%;
+  					padding: 25px;
+  				}
+  				h2{
+  					font-family: raleway;
+  					font-size: 25px;
+  					font-weight: 100;
+  					margin-bottom: 20px; 
+  				}
+  				ul{
+  					li{
+  						list-style: none;
+  					}
+  				}
+			}
+			.img-course{
+				width: 50%;
+				position: relative;
+				@include media-query( $small){
+					height: 330px;
+					width: 38%;
+				}
+				@include media-query( $x-small){
+					width: 100%;
+				}
+				img{
+					margin-bottom: 50px;
+					width: 400px;
+					@include media-query( $small){
+						width: 215px;
+ 						position: absolute;
+ 						left: 0;
+ 						right: 0;
+ 						margin: auto;
+ 						top: 50px;
+					}
+				}
+				a{
+					border: 1px solid #da4f2f;
+ 					color: #fff;
+ 					background: #da4f2f;
+ 					font-family: raleway;
+ 					font-weight: 100;
+ 					padding: 20px 40px;
+ 					font-size: 25px;
+ 					text-decoration: none;
+ 					border-radius: 5px;
+ 					@include media-query( $small){
+ 						position: absolute;
+  						bottom: 50px;
+  						left: 0;
+  						right: 0;
+  						margin: auto;
+  						text-align: center;
+  						width: 150px
+ 					}
+				}
 			}
 		}
 	}

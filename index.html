@@ -136,11 +136,11 @@ layout: default
 		<div class="column courses">
 			<p class="title seccion">Cursos</p>
 			<ul>
-				<li><a href="#">Digital</a></li>
-				<li><a href="#">Artisan</a></li>
-				<li><a href="#">Music</a></li>
-				<li><a href="#">Robo</a></li>
-				<li><a href="#">Travel</a></li>
+				{% for post in site.posts | limit: 5 %}
+				<li>
+		      		<a href="{{ post.url }}">{{ post.title }}</a>
+		    	</li>
+				{% endfor %}
 			</ul>
 		</div>
 		<div class="column social">

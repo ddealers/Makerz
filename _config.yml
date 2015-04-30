@@ -9,7 +9,16 @@ github_username:  ddealers
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:title/
 highlighter: pygments
 
 #Collections
+
+#Defaults
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts

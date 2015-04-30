@@ -3,15 +3,17 @@ layout: default
 ---
 <div class="post {{page.division}}">
 
-  <header class="post-header">
-  	<img src="{{page.img}}">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+  	<header class="post-header">
+  		<img src="{{page.img}}">
+    	<h1 class="post-title">{{ page.title }}</h1>
+  	</header>
 
-  <article class="post-content">
-    {{ content }}
-    <img src="{{page.photo}}">
-    <a href="/#contact">Inscribete</a>
-  </article>
+  	<article class="post-content">
+    	{{ content }}
+    	<div class="img-course">
+	    	<img src="{{page.photo}}">
+	    	<a href="/#contact">Inscribete</a>
+    	</div>
+  	</article>
 
 </div>
