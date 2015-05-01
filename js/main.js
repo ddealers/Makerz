@@ -167,8 +167,10 @@ $(document).on('ready',
 		var $form = $(this);
 		var name= $form.find("#name").val();
 		var email= $("#email").val();
+		var message= $("#message").val();
 		var nameIsString= /[a-zA-Z]/.test(name);
 		var emailIsString= /^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm.test(email);
+		var messageIsString= /[a-zA-Z0-9 .!\n]{0,50}/.test(message);
 
 		if(!name || !nameIsString){
 			alert("El dato Nombre no es válido");
@@ -176,6 +178,10 @@ $(document).on('ready',
 		}
 		if(!email|| !emailIsString){
 			alert("El dato E-mail no es válido");
+			return false;
+		}
+		if(!message|| !messageIsString){
+			alert("El dato Mensaje no es válido");
 			return false;
 		}
 		$form.find('.btn').prop('disabled', true);
