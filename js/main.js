@@ -148,7 +148,40 @@ $(document).on('ready',
 		{xparallax: '160px', yparallax: '10px'},
 		{xparallax: '100px', yparallax: '10px'}
 	);
-	
+// F O R M   S U G E R E N C I A S//
+	$('.form').submit(function(event){
+		var $form = $(this);
+		var email= $("#email-form").val();
+		var emailIsString= /^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm.test(email);
+
+		if(!email|| !emailIsString){
+			alert("El dato E-mail no es válido");
+			return false;
+		}
+		$form.find('.btn').prop('disabled', true);
+		return false;	
+		console.log ('sirve');
+	});
+// F O R M   C O N T A C T O//
+	$('.form-horizontal').submit(function(event){
+		var $form = $(this);
+		var name= $form.find("#name").val();
+		var email= $("#email").val();
+		var nameIsString= /[a-zA-Z]/.test(name);
+		var emailIsString= /^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm.test(email);
+
+		if(!name || !nameIsString){
+			alert("El dato Nombre no es válido");
+			return false;
+		}
+		if(!email|| !emailIsString){
+			alert("El dato E-mail no es válido");
+			return false;
+		}
+		$form.find('.btn').prop('disabled', true);
+		return false;	
+		console.log ('sirve');	
+	});
 });
 
 

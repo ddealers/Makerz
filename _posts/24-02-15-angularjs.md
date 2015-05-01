@@ -13,9 +13,9 @@ back: /imgs/fondo-angular.png
 <div class="main">
 	<h2>Detalles</h2>
 	<ul>
-		<li>- Total de horas: **24hrs**</li>
-		<li>- Costo: **$2,400**</li>
-		<li>- *Horario y días a elegir (Lunes a Viernes entre 7am y 7pm)*</li>
+		<li>- Total de horas: <strong>24hrs</strong></li>
+		<li>- Costo: <strong>$2,400</strong></li>
+		<li>- Horario y días a elegir <strong>(Lunes a Viernes entre 7am y 7pm)</strong></li>
 	</ul>
 </div>
 <div class="aside aside-2">
@@ -31,5 +31,4 @@ back: /imgs/fondo-angular.png
 		<li>- Servicios para acceder a una API REST</li>
 		<li>- Salida a producción</li>
 	</ul>
-
-<div>
+</div>

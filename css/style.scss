@@ -472,7 +472,7 @@ html{
 	  							}
 	  						}
 						}
-						.sugerencias{
+						.form{
 							position: absolute;
   							bottom: -15px;
   							left: 0;
@@ -898,9 +898,6 @@ html{
 				h2{
 					color: #da4f2f;
 				}
-				h3{
-					color: #da4f2f;
-				}
 				img{
 				border: 3px solid #da4f2f;
 				}
@@ -923,9 +920,6 @@ html{
 			}
 			.post-content{
 				h2{
-					color: #9acf00;
-				}
-				h3{
 					color: #9acf00;
 				}
 				img{
@@ -952,9 +946,6 @@ html{
 				h2{
 					color: #7eadbf;
 				}
-				h3{
-					color: #7eadbf;
-				}
 				img{
 				border: 3px solid #7eadbf;
 				}
@@ -977,9 +968,6 @@ html{
 			}
 			.post-content{
 				h2{
-					color: #00736b;
-				}
-				h3{
 					color: #00736b;
 				}
 				img{
@@ -1025,6 +1013,12 @@ html{
 		/*----------------------------------------------------*/
 		&.digital{
 			.post-content{
+				h2{
+					color: #a4cffc;
+				}
+				img{
+				border: 3px solid #a4cffc;
+				}
 				a{
 					border: 1px solid #2E8CBF;
 					color: #fff;
@@ -1037,7 +1031,18 @@ html{
 		}
 		/*----------------------------------------------------*/
 		&.modelado{
+			.post-header{
+				h1{
+					color: #2C86B8;
+				}
+			}
 			.post-content{
+				h2{
+					color: #2C86B8;
+				}
+				img{
+				border: 3px solid #2C86B8;
+				}
 				a{
 					border: 1px solid #2C86B8;
 					color: #fff;
@@ -1072,7 +1077,7 @@ html{
 			}
 			h1{
 				position: absolute;
-	  			font-size: 35px;
+	  			font-size: 32px;
 	  			top: 35px;
 	  			left: 190px;
 	  			font-family: raleway;
@@ -1213,9 +1218,7 @@ html{
 					}
 				}
 				a{
-					border: 1px solid #da4f2f;
  					color: #fff;
- 					background: #da4f2f;
  					font-family: raleway;
  					font-weight: 100;
  					padding: 20px 40px;
