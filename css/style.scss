@@ -830,7 +830,7 @@ html{
   						color: #2c8a61;
   						font-family: raleway;
   						text-decoration: none;
-  						padding: 10px 20px;
+  						padding: 10px 17px;
   						border: 1px solid;
   						margin: 0px 10px;
   						border-radius: 5px;
@@ -905,6 +905,9 @@ html{
 				@include media-query( $small){
 					width: 170px;
 					margin: 10px;
+				}
+				@include media-query( $x-small){
+					margin-bottom: 50px;
 				}
 				.title{
 					font-size: 18px;
