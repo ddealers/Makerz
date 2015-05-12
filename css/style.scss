@@ -599,7 +599,7 @@ html{
   							}
   							input{
   								width: 270px;
-  								height: 30px;
+  								height: 45px;
   								font-size: 16px;
   								font-weight: 400;
   								border-radius: 5px;
@@ -612,7 +612,7 @@ html{
   							input[type="submit"]{
   								font-family: raleway;
   								font-size: 16px;
-  								width: 100px;
+  								width: 135px;
   								background: #2c8a61;
   								border-radius: 5px;
   								border: none;
@@ -670,9 +670,10 @@ html{
   						.parrafo{
   							font-family: raleway;
   							color: #fff;
-  							line-height: 29px;
+  							line-height: 32px;
   							text-align: justify;
   							font-weight: 100;
+  							font-size: 23px;
   							@include media-query( $x-small){
   								text-align: left;
   							}
@@ -778,6 +779,7 @@ html{
   						color: #fff;
   						font-weight: 100;
   						opacity: 0.6;
+  						text-align: left;
   					}
   					input{
   						width: 290px;
@@ -847,7 +849,7 @@ html{
 			}
 			#address{
 				position: absolute;
-  				bottom: 40px;
+  				bottom: 5px;
   				right: 220px;
   				font-size: 16px;
   				font-family: raleway;
@@ -864,6 +866,10 @@ html{
   					left: 0;
   					right: 0;
   					text-align: center;
+  				}
+  				p{
+  					margin-bottom: 10px;
+  					text-align: center; 
   				}
 			}
 		}
