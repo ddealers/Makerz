@@ -3,7 +3,7 @@ layout: post
 title:  "Android Apps"
 date:   2015-02-28 02:30:16
 division: "android"
-img: /imgs/android.png
+img: /imgs/Android.png
 photo: /imgs/Android-img.png
 back: /imgs/fondo-android.png
 ---
