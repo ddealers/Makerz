@@ -3,7 +3,7 @@
     <div class="back-phone">
         <img src="/imgs/back-phone.png">
     </div>
-    {% if page.layout %}
+    {% if page.is_post %}
     <div class="back-post" style="background:url({{ page.back }}) fixed center center; background-size: cover">
     </div>
     {% else %}

@@ -9,11 +9,12 @@ layout: default
   	</header>
 
   	<article class="post-content">
-    	{{ content }}
-    	<div class="img-course">
-	    	<img src="{{page.photo}}">
-	    	<a href="/#contact">Inscribete</a>
-    	</div>
-  	</article>
-
+      <div class="thumbnail">
+    	 <img src="{{page.photo}}">
+      </div>
+      {{ content }}
+      <div class="subscribe">
+    	 <a href="mailto:be@digitaldealers.mx?subject=Informes del curso {{page.title}}&body=Deseo inscribirme al curso de {{page.title}}.%0D%0AMe pueden contactar por correo o vía telefónica.%0D%0AMi teléfono es:%0D%0AGracias!">Inscríbete</a>
+      </div>
+    </article>
 </div>
