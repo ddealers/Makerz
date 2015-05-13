@@ -633,7 +633,7 @@ html{
 				  	margin-top: 450px;
 				  	background: rgba(10, 60, 42, 0.5) url(../imgs/pattern.png)repeat;
 				  	@include media-query( $x-small){
-				  		height: 1100px;
+				  		height: 1500px;
 				  		margin-top: 400px;
 				  	}
 				  	#tit-cursos{
@@ -903,6 +903,9 @@ html{
 					@include media-query( $medium){
 						margin: 10px 10px 50px 10px;
 					}
+				}
+				&.social{
+					margin-top: 25px;
 				}
 				@include media-query( $medium){
 					width: 280px;
