@@ -619,7 +619,11 @@ html{
   								outline: 0;
   								color: #fff;
   								font-weight: 100;
-  								margin-top: 20px
+  								margin-top: 20px;
+  								cursor: pointer;
+  								&:hover{
+  									background: #226B4B;
+  								}
   							}
   							button:hover{
   								background: #226B4B;
@@ -815,6 +819,7 @@ html{
   						outline: 0;
   						color: #fff;
   						font-weight: 100;
+  						cursor: pointer;
   					}
   					.btn.btn-ttc:hover{
   						background: #226B4B;
