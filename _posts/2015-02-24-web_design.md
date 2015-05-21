@@ -19,7 +19,7 @@ back: /imgs/web.png
 
 		<li>Costo: <strong>$2,400</strong></li>
 
-		<li>Horario: <br><strong>Lunes y Miércoles de 9 a.m. a 11 a.m.<br>Lunes y Miércoles de 5 p.m. a 7 p.m.</strong></li>
+		<li>Horario: <br><strong>Lunes y Miércoles<br>9 a.m. a 11 a.m.<br>5 p.m. a 7 p.m.</strong></li>
 	</ul>
 </div>
 <div class="course">
@@ -27,9 +27,15 @@ back: /imgs/web.png
 	<ul>
 		<li>- Arquitectura de la información</li>
 		<li>- HTML5 Etiquetas y Semántica</li>
+		<li>- Texto</li>
+		<li>- Listas</li>
+		<li>- Vínculos</li>
+		<li>- Imágenes</li>
+		<li>- Tablas</li>
+		<li>- Formularios</li>
+		<li>- CSS Styling</li>
+		<li>- CSS Display & Grids</li>
 		<li>- CSS3</li>
-		<li>- Bootstrap</li>
 		<li>- Responsive Design</li>
-		<li>- Introducción a Javascript</li>
 	</ul>
-</div>		
+</div>

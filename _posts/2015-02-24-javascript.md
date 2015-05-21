@@ -17,7 +17,7 @@ back: /imgs/progra.png
 	<ul>
 		<li>Total de horas: <strong>24hrs</strong></li>
 		<li>Costo: <strong>$2,400</strong></li>
-		<li>Horario:<br><strong>Martes y Jueves de 9 a.m. a 11 a.m.</strong></li>
+		<li>Horario:<br><strong>Martes y Jueves<br>9 a.m. a 11 a.m.</strong></li>
 	</ul>
 </div>
 <div class="course">

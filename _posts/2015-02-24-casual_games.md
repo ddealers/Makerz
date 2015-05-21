@@ -17,7 +17,7 @@ back: /imgs/fondo-games.png
 	<ul>
 		<li>Total de horas: <strong>36hrs</strong></li>
 		<li>Costo: <strong>$3,600</strong></li>
-		<li>Horario:<br><strong>Martes y Jueves de 3 p.m. a 5 p.m.</strong></li>
+		<li>Horario:<br><strong>Martes y Jueves<br>3 p.m. a 5 p.m.</strong></li>
 	</ul>
 </div>
 <div class="course">
