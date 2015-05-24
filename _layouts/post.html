@@ -14,7 +14,41 @@ layout: default
       </div>
       {{ content }}
       <div class="subscribe">
-    	 <a href="mailto:be@digitaldealers.mx?subject=Informes del curso {{page.title}}&body=Deseo inscribirme al curso de {{page.title}}.%0D%0AMe pueden contactar por correo o vía telefónica.%0D%0AMi teléfono es:%0D%0AGracias!">Inscríbete</a>
+        <a href="#" id="subscribe-btn">Inscríbete ya!</a>
+    	 <!--a href="mailto:be@digitaldealers.mx?subject=Informes del curso {{page.title}}&body=Deseo inscribirme al curso de {{page.title}}.%0D%0AMe pueden contactar por correo o vía telefónica.%0D%0AMi teléfono es:%0D%0AGracias!">Inscríbete</a-->
+      </div>
+      <div id="subscribe-form">
+        <div class="fill-back"></div>
+        <form class="{{ page.division }}" id="subscribe-me">
+          <h3>Formulario de Inscripción</h3>
+          <div class="input-field">
+            <label>Nombre</label>
+            <input type="text" id="subscribe-name">
+          </div>
+          <div class="input-field">
+            <label>E-mail</label>
+            <input type="text" id="subscribe-email">
+          </div>
+          <div class="input-field">
+            <label>Teléfono</label>
+            <input type="text" id="subscribe-phone">
+          </div>
+          <div class="input-field">
+            <label>Curso de interés</label>
+            <select id="subscribe-course">
+              {% for post in site.posts %}
+              <option>{{ post.title }}</option>
+            {% endfor %}
+            </select>
+          </div>
+          <div class="input-field">
+            <label>Comentarios</label>
+            <textarea id="subscribe-message"></textarea>
+          </div>
+          <div class="input-field">
+            <input type="submit" class="btn" value="Enviar">
+          </div>
+        </form>
       </div>
     </article>
 </div>
