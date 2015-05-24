@@ -20,6 +20,13 @@ $large:			1180px;
 	-o-border-radius: $radius;
 	border-radius: $radius;
 }
+@mixin display-flex(){
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;		
+}
 @mixin flex($val){
 	-webkit-flex: $val;
 	-moz-flex: $val;
@@ -329,34 +336,17 @@ html{
 				background-size: cover;
 				position: relative;
 				height: 100%;
+				padding-bottom: 50px;
 				.flex-container{
-					width: 100%;
-					height: 750px;
-					padding: 0;
-	  				margin: 0;
 					list-style: none;
-					display: -webkit-box;
-					display: -moz-box;
-					display: -ms-flexbox;
-					display: -webkit-flex;
-					display: inline-flex;
-					-webkit-flex-flow: wrap;
-					justify-content: space-around;
-					@include media-query( $small){
-						height: 950px;
-					}
-					@include media-query( $x-small){
-						padding-top: 110px;
-						height: 100%;
-					}
+					@include display-flex;
+					@include flex-flow(column wrap);
+					@include justify-content(space-around);
 					#tit-cursos{
-						position: absolute;
 						font-size: 50px;
-						top: 100px;
-						left: 0;
 						font-family: raleway;
-						right: 0;
 						margin: auto;
+						padding-top: 20px;
 						text-align: center;
 						color: #fff;
 						text-shadow: 2px 1px 12px #000;
@@ -372,229 +362,97 @@ html{
 						color: #fff;
 						font-size: 30px;
 						text-shadow: 2px 1px 12px #000;
-						position: absolute;
-						left: 0;
-						right: 0;
-						top: 165px;
 						line-height: 40px;
 						font-weight: lighter;
 						opacity: 1;
 						margin: auto;
 						font-family: raleway;
 						width: 600px;
-  						top: 195px;
+						padding: 20px 0;
   						@include media-query($x-small){
   							width: 300px;
+  							font-size: 20px;
+  							line-height: 30px;
+  							span{
+  								font-size: 10px;
+  							}
   						}
 						span{
 							font-size: 20px;
 							font-style: italic;
 						}
 					}
-					.courses-head{
-						color: #fff;
-						font-size: 20px;
-						text-align: center;
-						font-family: raleway;
-						font-weight: lighter;
-						padding: 20px 10px 0;
-					}
-					.courses-parents{
-						padding-top: 375px;
-						display: -webkit-inline-box;
-						margin: auto;
-						width: 1000px;
-  						position: absolute;
-  						left: 0;
-  						right: 0;
-  						.icono-curso{
-							width: 170px;
-						  	height: 230px;
-						  	padding: 10px;
-						  	@include media-query( $medium){
-						  		width: 120px;
-						  	}
-						  	@include media-query( $x-small){
-						  		position: relative;
-						  		margin: auto;
-	  							height: auto;
-	  							width: 170px;
-						  	}
-						  	img{
-						  		width: 170px;
-						  		height: 170px;
-						  		margin: 10px 10px 0px;
-						  		@include media-query( $medium){
-						  			width: 130px;
-						  			height: 130px;
-						  		}
-						  		@include media-query( $x-small){
-						  			width: 150px;
-						  			height: 150px;
-						  		}
-						  	}
-						  	.iconText{
-						  		color: #fff;
-						  		font-family: raleway;
-						  		font-size: 23px;
-						  		font-weight: 100;
-						  		text-shadow: 2px 1px 12px #000;
-						  		@include media-query( $x-small){
-						  			position: relative;
-	  								font-size: 16px;
-	  								text-align: center;
-	  								width: 100px;
-						  		}
-						  	}
-							#curso-digital{
-								position: relative;
-								font-size: 30px;
-								left: 41px;
-								text-shadow: 2px 1px 12px #000;
-								@include media-query( $x-small){
-									font-size: 20px;
-	  								left: 0;
-	  								right: 0;
-	  								margin: auto;
-								}
-							}
-							#curso-artisan{
-								position: relative;
-								font-size: 30px;
-								left: 44px;
-								text-shadow: 2px 1px 12px #000;
-								@include media-query( $x-small){
-									font-size: 20px;
-	  								left: 0;
-	  								right: 0;
-	  								margin: auto;
-								}
-							}
-							#curso-music{
-								position: relative;
-								font-size: 30px;
-								left: 44px;
-								text-shadow: 2px 1px 12px #000;
-								@include media-query( $x-small){
-									font-size: 20px;
-	  								left: 0;
-	  								right: 0;
-	  								margin: auto;
-								}
-							}
-							#curso-robo{
-								position: relative;
-								font-size: 30px;
-								left: 55px;
-								text-shadow: 2px 1px 12px #000;
-								@include media-query( $x-small){
-									font-size: 20px;
-	  								left: 0;
-	  								right: 0;
-	  								margin: auto;
-								}
-							}
-							#curso-travel{
-								position: relative;
-								font-size: 30px;
-								left: 45px;
-								text-shadow: 2px 1px 12px #000;
-								@include media-query( $x-small){
-									font-size: 20px;
-	  								left: 0;
-	  								right: 0;
-	  								margin: auto;
-
-								}
-							}
-						}
-					}
 					.courses{
-						margin: auto;
-						width: 1000px;
-  						position: absolute;
-  						left: 0;
-  						right: 0;
-  						background-color: rgba(0, 0, 0, 0.5);
-  						top: 400px;
-  						padding-bottom: 300px;
+						background-color: rgba(0, 0, 0, 0.5);
   						box-shadow: 10px 10px 26px;
   						border-radius: 30px;
-  						@include media-query( $medium){
-  							position: relative;
-  							margin: auto;
-  							width: 975px;
-  						}
+  						width: 95%;
+  						margin: auto;
   						@include media-query( $small){
   							border-radius: 0;
   						}
-						@include media-query( $x-small){
-							display: block;
-							margin: auto;
-							width: 100%;
-							position: relative;
-							box-shadow: none;
-							padding-bottom: 390px;
+						.courses-head{
+							color: #fff;
+							font-size: 25px;
+							text-align: center;
+							font-family: raleway;
+							font-weight: lighter;
+							padding: 50px 0;
 						}
 						ul{
 							width: 95%;
 	  						margin: auto;
 	  						text-shadow: 2px 1px 12px #000;
 	  						font-size: 20px;
+	  						@include display-flex;
+							@include flex-flow(row wrap);
+							list-style-type: none;
 	  						li{
-	  							padding: 50px;
-	  							list-style: none;
-	  							width: 130px;
-	  							display: inline-block;
-	  							height: 100px;
-  								float: left;
   								text-align: center;
-  								@include media-query( $x-small){
-  									padding: 60px 20px;
-  								}
-	  							a{
+  								margin-bottom: 30px;
+  								@include flex(0 25%);
+								@include box-sizing(border-box);
+								@include media-query($small){
+									@include flex(0 50%);
+								}
+  								a{
+	  								display: block;
 	  								color: #fff;
 	  								text-decoration: none;
 	  								font-family: raleway;
 	  								font-weight: 100;
+	  								padding: 0 5px;
 	  								img{
-	  									width: 108px;
+	  									width: 50%;
+										margin: auto;
+										display: block;
 	  								}
 	  							}
 	  						}
 						}
 						.form{
-							position: absolute;
-  							bottom: -15px;
-  							left: 0;
-  							padding: 50px;
+							padding: 50px 0;
   							border-top: 1px solid #6A6A6A;
   							width: 600px;
-  							margin: auto;
-  							right: 0;
-  							@include media-query( $x-small){
-  								width: auto;
-  								border-top: none;
-  								bottom: 0;	
+  							margin: 50px auto 0;
+  							@include media-query( $small ){
+  								width: 100%;
   							}
   							p{
   								color: #fff;
-  								text-decoration: none;
   								font-family: raleway;
   								font-weight: 100;
   								letter-spacing: 1px;
   								width: 300px;
   								line-height: 30px;
   								float: left;
-  								@include media-query( $x-small){
+  								@include media-query( $x-small ){
   									color: #fff;
-  									text-decoration: none;
-  									font-family: raleway;
-  									font-weight: 100;
-  									letter-spacing: 1px;
-  									width: 300px;
-  									line-height: 30px;
-  									float: left;
+  									margin: auto;
+									text-align: center;
+									float: none;
+									line-height: 23px;
+									padding-bottom: 10px;
   								}
   							}
   							input{
@@ -607,7 +465,12 @@ html{
   								border: none;
   								border-bottom: 1px solid #fff;
   								padding: 0px 10px;
-  								font-family: raleway
+  								font-family: raleway;
+  								@include media-query( $x-small ){
+  									float: none;
+  									margin: auto;
+  									display: block;
+  								}
   							}
   							input[type="submit"]{
   								font-family: raleway;
@@ -631,22 +494,16 @@ html{
 						}
 					}
 				}
-				.title-parrafo {
-				  	position: relative;
-				  	height: 900px;
-				  	margin-top: 450px;
-				  	background: rgba(10, 60, 42, 0.5) url(../imgs/pattern.png)repeat;
-				  	@include media-query( $x-small){
-				  		height: 1500px;
-				  		margin-top: 400px;
-				  	}
+			}
+			#nosotros{
+				background: url(../imgs/mac-pro.jpg) no-repeat;
+				background-size: cover;
+				.container {
+				  	background: rgba(10, 60, 42, 0.5) url(../imgs/pattern.png) repeat;
+				  	padding: 20px;
 				  	#tit-cursos{
-						position: absolute;
 						font-size: 50px;
-						top: 100px;
-						left: 0;
 						font-family: raleway;
-						right: 0;
 						margin: auto;
 						text-align: center;
 						color: #fff;
@@ -659,17 +516,13 @@ html{
   						}
 					}
 				  	.somos{
-				  		position: absolute;
-  						top: 210px;
-  						width: 70%;
+				  		width: 70%;
   						margin: auto;
   						border-radius: 15px;
   						padding: 60px;
-  						right: 0;
-  						left: 0;
   						@include media-query( $x-small){
-  							padding: 0px 30px;
-  							width: 300px;
+  							padding: 20px;
+  							width: 90%;
   						}
   						.parrafo{
   							font-family: raleway;
@@ -679,7 +532,8 @@ html{
   							font-weight: 100;
   							font-size: 23px;
   							@include media-query( $x-small){
-  								text-align: left;
+  								font-size: 18px;
+  								line-height: 25px;
   							}
   						}
 				  	}
@@ -1258,7 +1112,7 @@ html{
   				font-weight: 100;
   				text-align: justify;
   				padding: 10px 30px;
-  				box-sizing: border-box;
+  				@include box-sizing(border-box);
   				@include media-query( $medium ){
   					flex: 0 50%;
   				}
@@ -1273,7 +1127,7 @@ html{
   				line-height: 25px;
   				font-family: raleway;
   				font-weight: 100;
-  				box-sizing: border-box;
+  				@include box-sizing(border-box);
   				@include media-query( $medium ){
   					flex: 0 50%;
   				}
@@ -1298,7 +1152,7 @@ html{
   				line-height: 25px;
   				font-family: raleway;
   				font-weight: 100;
-  				box-sizing: border-box;
+  				@include box-sizing(border-box);
   				@include media-query( $medium ){
   					flex: 0 50%;
   					padding: 10px 30px;
@@ -1377,11 +1231,26 @@ html{
   				width: 80%;
   				height: 50%;
   			}
+  			&.web{
+  				background: #da4f2f;
+  			}
 			&.angular{
 				background: #da4f2f;
 			}
 			&.android{
 				background: #9acf00;
+			}
+			&.ios{
+				background: #7eadbf;
+			}
+			&.programacion{
+				background: #00736b;
+			}
+			&.games{
+				background: #BCBFB8;
+			}
+			&.digittal{
+				background: #a4cffc;
 			}
 			p{
 				margin-bottom: 5px;
@@ -1393,20 +1262,20 @@ html{
   				margin-bottom: 10px;
 			}
 			.input-field{
-				display: flex;
+				@include display-flex;
 				@include justify-content(center);
 				margin: 5px 0;
 				label{
-					@include flex(0 45%);
 					text-align: right;
 					padding-right: 1em;
+					@include flex(0 45%);
 				}
 				input, textarea, select{
-					@include flex(0 55%);
 					border: none;
 					padding: 10px;
-					box-sizing: border-box;
 					font-size: 16px;
+					@include flex(0 55%);
+					@include box-sizing(border-box);
 				}
 				input[type="submit"]{
 					color: white;
