@@ -17,7 +17,10 @@ back: /imgs/header.iosCurso2.jpg
 	<ul>
 		<li>Total de horas: <strong>24hrs</strong></li>
 		<li>Costo: <strong>$3,600</strong></li>
-		<li>Horario:<br><strong>Lunes y Miércoles<br>3 p.m. a 5 p.m.</strong></li>
+		<li>Horario:
+			<br><strong>Lunes y Miércoles<br>3 p.m. a 5 p.m.</strong>
+			<br><br><strong>Sábados<br>10 a.m. a 2 p.m.</strong>
+		</li>
 	</ul>
 </div>
 <div class="course">

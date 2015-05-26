@@ -19,7 +19,10 @@ back: /imgs/web.png
 
 		<li>Costo: <strong>$2,400</strong></li>
 
-		<li>Horario: <br><strong>Lunes y Miércoles<br>9 a.m. a 11 a.m.<br>5 p.m. a 7 p.m.</strong></li>
+		<li>Horario: 
+			<br><strong>Lunes y Miércoles<br>9 a.m. a 11 a.m.<br>5 p.m. a 7 p.m.</strong>
+			<br><br><strong>Sábados<br>10 a.m. a 2 p.m.</strong>
+		</li>
 	</ul>
 </div>
 <div class="course">

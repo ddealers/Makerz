@@ -17,7 +17,10 @@ back: /imgs/fondo-digital.png
 
 		<li>Costo: <strong>$2,400</strong></li>
 
-		<li>Horario:<br><strong>Lunes y Miércoles<br>11 a.m. a 1 p.m.</strong></li>
+		<li>Horario:
+			<br><strong>Lunes y Miércoles<br>11 a.m. a 1 p.m.</strong>
+			<br><br><strong>Sábados<br>10 a.m. a 2 p.m.</strong>
+		</li>
 	</ul>
 </div>
 <div class="course">
