@@ -1191,8 +1191,15 @@ html{
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				flex-flow: column;
 				@include media-query( $medium ){
   					flex: 0 100%;
+  				}
+  				p{
+  					margin-top: 1em;
+  					font-family: raleway;
+  					font-size: 18px;
+  					font-weight: 100;
   				}
 			}
 		}
