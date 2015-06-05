@@ -828,6 +828,17 @@ html{
 		@include media-query( $small){
 			background-size: cover;
 		}
+		.summer{
+			text-align: center;
+  			border-radius: 1em;
+  			margin: 2em 0 0;
+  			padding: 0.3em;
+  			width: 80%;
+  			box-sizing: border-box;
+  			@include media-query( $small ){
+  				margin: 2em auto 0;
+  			}
+		}
 		/*----------------------------------------------------*/
 		&.web{
 			.post-header{
@@ -854,6 +865,9 @@ html{
 					background: #85301D;
 				}
 			}
+			.summer{
+				background: #da4f2f;
+			}
 		}
 		/*----------------------------------------------------*/
 		&.angular{
@@ -877,6 +891,9 @@ html{
 				a:hover{
 					background: #85301D;
 				}
+			}
+			.summer{
+				background: #da4f2f;
 			}
 		}
 		/*----------------------------------------------------*/
@@ -902,6 +919,9 @@ html{
 					background: #5F7F00;
 				}
 			}
+			.summer{
+				background: #9acf00;
+			}
 		}	
 		/*----------------------------------------------------*/
 		&.ios{
@@ -926,6 +946,9 @@ html{
 					background: #7199a8;
 				}
 			}
+			.summer{
+				background: #7eadbf;
+			}
 		}	
 		/*----------------------------------------------------*/
 		&.programacion{
@@ -949,6 +972,9 @@ html{
 				a:hover{
 					background: #00665F;
 				}
+			}
+			.summer{
+				background: #00736b;
 			}
 		}
 		/*----------------------------------------------------*/
@@ -977,15 +1003,23 @@ html{
 					background: #838580;
 				}
 			}
+			.summer{
+				background: #BCBFB8;
+			}
 		}
 		/*----------------------------------------------------*/
 		&.digital{
+			.post-header{
+				h1{
+					color: #2E8CBF;
+				}
+			}
 			.post-content{
 				h2{
-					color: #a4cffc;
+					color: #2E8CBF;
 				}
 				img{
-				border: 3px solid #a4cffc;
+				border: 3px solid #2E8CBF;
 				}
 				a{
 					border: 1px solid #2E8CBF;
@@ -995,6 +1029,9 @@ html{
 				a:hover{
 					background: #247099;
 				}
+			}
+			.summer{
+				background: #2E8CBF;
 			}
 		}
 		/*----------------------------------------------------*/
@@ -1019,6 +1056,9 @@ html{
 				a:hover{
 					background: #247099;
 				}
+			}
+			.summer{
+				background: #2C86B8;
 			}
 		}
 		header.post-header{
@@ -1256,7 +1296,7 @@ html{
 			&.games{
 				background: #BCBFB8;
 			}
-			&.digittal{
+			&.digital{
 				background: #a4cffc;
 			}
 			p{
